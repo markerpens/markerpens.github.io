@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mark Robles</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--AOS-->
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--AOS-->
+
+    <script src="hide.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Container Fluid -->
+    <div class="container-fluid my-container-fluid">
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg p-0">
+            <a class="navbar-brand py-3" href="index.html">Mark Robles</a>
+
+            <!-- Dropdown Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"> <img src="images/dropdown.png" id="dropdown-button" class="img-fluid"
+                        data-aos="fade-up" data-aos-duration="1500">
+                </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+
+                    <!-- Resume -->
+                    <li class="nav-item pr-3">
+                        <a class="nav-link" href="#">Resume</a>
+                    </li>
+
+                    <!-- About -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Overview -->
+        <div class="jumbotron jumbotron-fluid">
+            <h1 class="hero-header">Beyond Hope is a passion project with the goal of amalgamating mechanics
+                from both role-playing and zombie survival games to create a familiar, yet unique gameplay
+                experience.</h1>
+        </div>
+
+        <!-- Roles -->
+        <div class="row my-row">
+
+            <div class="col-lg-3 py-3 pt-5 py-lg-5">
+                <h3>Role</h3>
+                <ul>
+                    <li>Game Developer</li>
+                    <li>Game Designer</li>
+                    <li>Animator</li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 py-3 py-lg-5">
+                <h3>Tools</h3>
+                <ul>
+                    <li>Unreal Engine 4</li>
+                    <li>Blender</li>
+                    <li>Mixamo</li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 py-3 py-lg-5">
+                <h3>Credits</h3>
+                <ul>
+                    <li>Marcos Jose</li>
+                    <li>Kamil Bielski</li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 py-3 pb-5 py-lg-5">
+                <h3>Date</h3>
+                <ul>
+                    <li>July - October 2019</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Contributions -->
+        <div class="row">
+            <div class="col-lg-12 my-project-content pt-5">
+                <h1>Contributions</h1>
+                <p class="project-copy">I created the entire game using Unreal Engine 4's Blueprint System. External
+                    assets
+                    such as 3D models and animations were used from the Mixamo website.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12 my-project-content pt-5">
+                <h2>General Game Design</h2>
+                <p class="project-copy">I designed the game's mechanics and balancing, such as the damage and mana cost
+                    of abilities. I also designed abilities in such a way that each of them grants some form of utility
+                    in combat other than damage, i.e. maneuvering away from hordes of enemies or restoring health and
+                    mana.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12 my-project-content pt-5">
+                <h2>Scripting</h2>
+                <p class="project-copy">Using Unreal Engine 4's Blueprint System (essentially visual coding), I scripted
+                    the entirety of the game
+                    including the enemy AI, the wave
+                    system, and the combat system.</p>
+            </div>
+
+            <div class="col-lg-12 my-project-content pb-5 pt-3">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <video class="video-fluid" autoplay loop muted>
+                        <source src="videos/wtf 2.mp4" type="video/mp4" />
+                    </video>
+                </div>
+                <h6 class="pt-3">Overview of Avernus' Blueprint Event Graph</h6>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12 my-project-content pt-4">
+                <h2>Animations</h2>
+                <p class="project-copy">I animated the characters using Mixamo's custom animations and 3D
+                    character assets, and scripted them in with Unreal Engine's Animation Tools.</p>
+            </div>
+            <div class="col-lg-12 my-project-content pb-5 pt-3">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <video class="video-fluid" autoplay loop muted>
+                        <source src="videos/wtf 3.mp4" type="video/mp4" />
+                    </video>
+                </div>
+                <h6 class="pt-3">Depiction of creating animation states</h6>
+            </div>
+        </div>
+
+        <div class="row my-row">
+            <div class="col-lg-12 my-project-content pt-4">
+                <h2>VFX</h2>
+                <p class="project-copy">I utilized Unreal Engine's free VFX assets to script special effects for
+                    visual feedback regarding combat, such as casting abilities and hitting enemies.</p>
+            </div>
+            <div class="col-lg-12 my-project-content pb-5 pt-3">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <video class="video-fluid" autoplay loop muted>
+                        <source src="videos/wtf 4.mp4" type="video/mp4" />
+                    </video>
+                </div>
+                <h6 class="pt-3">Depiction of VFX when casting an ability</h6>
+            </div>
+        </div>
+
+
+        <!-- Story -->
+        <div class="row my-row">
+            <div class="col-lg-6 my-project-content py-5">
+                <h1>Premise</h1>
+                <p class="project-copy">In the world of Terros, an epidemic known as the Bloodlust Plague ravages
+                    the
+                    entire planet. Both mortals and Gods infected with the disease turned into creatures known as
+                    Revenants, who
+                    crave nothing but flesh and blood. Avernus, the God of Thunder and Hellfire, is the last living
+                    being standing in Terros. Will he survive?</p>
+
+                <p class="project-copy">Writing short backstories acts as a brainstorming process for creating the
+                    game's mechanics. In this case, it helped me determine the incorporation of role-playing
+                    elements
+                    such
+                    as activating abilities, as
+                    well as zombie survival elements, such as fighting perpetual hordes of enemies.</p>
+            </div>
+
+            <div class="col-lg-6 my-project-content py-5">
+                <img src="images/avernus-placeholder.png" class="img-fluid">
+                <h6>Artwork by Kamil Bielski</h6>
+            </div>
+
+        </div>
+
+        <!-- Problem -->
+        <div class="row my-row">
+            <div class="col-lg-6 my-project-content py-5">
+                <h1>Problem</h1>
+                <p class="project-copy">I found that role-playing games that rely on abilities to drive combat, such
+                    as
+                    Dragon
+                    Age: Origins, were too repetitive. It was mostly static, wherein players would stand in one spot
+                    auto-attacking an enemy while occassionally pressing other buttons to activate skills.</p>
+            </div>
+
+            <!-- Solution -->
+            <div class="col-lg-6 my-project-content py-sm-5 pb-5">
+                <h1>Solution</h1>
+                <p class="project-copy">I implemented more dynamic a combat system where players could swing their
+                    weapons manually
+                    instead of auto-attacking.
+                    Players could also activate abilities that enabled them to either
+                    manuever around the map more effectively or deal damage to multiple enemies at once.</p>
+            </div>
+        </div>
+
+        <!-- Abilities -->
+        <div class="row my-row">
+            <div class="col-lg-12 col-xl-6 my-project-content py-5" id="ability-row">
+                <h1>Abilities</h1>
+
+                <!-- Ability Buttons -->
+                <button type="button" class="btn active btn-sm pr-md-4 pr-lg-4 pt-3 1" data-showid="1"><img
+                        src="images/passive.png" class="img-fluid left"></button>
+
+                <button type="button" class="btn btn-sm pr-md-4 pr-lg-4 pt-3 2" data-showid="2"><img
+                        src="images/mouse.png" class="img-fluid left"></button>
+
+                <button type="button" class="btn btn-sm pr-md-4 pr-lg-4 pt-3 3" data-showid="3"><img
+                        src="images/shift.png" class="img-fluid left"></button>
+
+                <button type="button" class="btn btn-sm pr-md-4 pr-lg-4 pt-3 4" data-showid="4"><img src="images/q.png"
+                        class="img-fluid left"></button>
+
+                <button type="button" class="btn btn-sm pr-md-4 pr-lg-4 pt-3 5" data-showid="5"><img src="images/r.png"
+                        class="img-fluid left"></button>
+
+                <button type="button" class="btn btn-sm pr-md-4 pr-lg-4 pt-3 6" data-showid="6"><img src="images/e.png"
+                        class="img-fluid left"></button>
+
+                <!-- Twilight of the Thunder God -->
+                <div class="my-project-content py-4 pl-0 textBox" id="1">
+                    <h6 class="pt-2">PASSIVE</h6>
+                    <h2>Purga's Wrath</h2>
+                    <p class="project-copy">Avernus' magical hammer, Purga, allows him to restore 5% of his mana
+                        after
+                        the last swing of "Divine Onslaught".
+                    </p>
+                </div>
+
+                <!-- Divine Onslaught -->
+                <div class="my-project-content py-4 pl-0 textBox" id="2">
+                    <h6 class="pt-2">LEFT-CLICK</h6>
+                    <h2>Divine Onslaught</h2>
+                    <p class="project-copy">Clicking three times enables Avernus to deliver a three-hit attack
+                        combo. The last swing hits multiple enemies.
+                    </p>
+                </div>
+
+                <!-- Thunderstride -->
+                <div class="my-project-content py-4 pl-0 textBox" id="3">
+                    <h6 class="pt-2">LEFT-SHIFT</h6>
+                    <h2>Thunderstride</h2>
+                    <p class="project-copy">Avernus channels the speed of lightning to dash forward, demolishing
+                        anything in his path.
+                    </p>
+                </div>
+
+                <!-- Hellfire Flux -->
+                <div class="my-project-content py-4 pl-0 textBox" id="4">
+                    <h6 class="pt-2">Q</h6>
+                    <h2>Hellfire Flux</h2>
+                    <p class="project-copy">Avernus draws energy from the depths of Acheron, restoring 30% of his health
+                        and summoning an ethereal hammer that kills enemies around him for 20 seconds.
+                    </p>
+                </div>
+
+                <!-- Perdition -->
+                <div class="my-project-content py-4 pl-0 textBox" id="5">
+                    <h6 class="pt-2">E</h6>
+                    <h2>Perdition</h2>
+                    <p class="project-copy">Avernus summons the Hammer of Perdition, oblitering enemies in front of
+                        him with hellfire.
+                    </p>
+                </div>
+
+                <!-- Salvation -->
+                <div class="my-project-content py-4 pl-0 textBox" id="6">
+                    <h6 class="pt-2">R</h6>
+                    <h2>Salvation</h2>
+                    <p class="project-copy">Avernus summons the Hammer of Salvation, bringing upon a thunderstorm
+                        that
+                        decimates everything in a large radius. He heals 100% of his health.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Ability Video -->
+            <div class="col-lg-12 col-xl-6 my-project-content pb-5 pt-xl-5 vid">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <video class="video-fluid" autoplay loop muted id="change-image">
+                        <source src="videos/Passive2.mp4" type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <!-- Core Gameplay -->
+        <div class="row my-row">
+            <div class="col-lg-12 my-project-content pt-5 pb-4">
+                <h1>Gameplay</h1>
+                <p class="project-copy">The player must survive against endless hordes of Revenants for as long as
+                    they
+                    can. More Revenants are spawned each wave, and the player can eliminate
+                    them with abilities. Health and mana management are also of utmost importance. Should the player's
+                    health
+                    deplete to 0, they will lose the game.</p>
+            </div>
+
+            <!--
+            <div class="col-lg-12 my-project-content pb-5">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <video class="video-fluid" autoplay loop muted>
+                        <source src="videos/TestVid3.mp4" type="video/mp4" />
+                    </video>
+                </div>
+                <h6 class="pt-3">A brief playthrough showcasing gameplay mechanics</h6>
+            </div>
+        -->
+
+        <div class="col-lg-12 my-project-content pb-5">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1MzJFCGDXlo"
+                    allowfullscreen></iframe>
+            </div>
+            <h6 class="pt-3">A brief playthrough showcasing gameplay mechanics</h6>
+        </div>
+
+        </div>
+
+        <!-- Playtesting -->
+        <div class="row">
+
+            <div class="col-lg-6 my-project-content pt-5">
+                <h1>Playtesting</h1>
+            </div>
+
+            <div class="col-lg-6 my-project-content pt-5">
+                <h2 class="project-copy">What were the results?</h2>
+                <p class="project-copy">
+                    By creating various
+                    questions that target potential unbalanced aspects of the game such as abilities and spawn rates, it
+                    helped me balance them
+                    accordingly by analyzing the playtesting results.</p>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-6 my-project-content pt-5">
+                <h1>01</h1>
+            </div>
+
+            <div class="col-lg-6 my-project-content pt-5">
+                <h2 class="project-copy">Were mana costs and cooldowns balanced?</h2>
+                <p class="project-copy">To facilitate fast-paced gameplay, cooldowns for abilities were
+                    relatively
+                    short and the mana costs were low. This caused players to spam abilities without much
+                    drawback; for
+                    example, players were able to use their ultimate ability, "Salvation," multiple times in one
+                    wave.
+                </p>
+
+                <p class="project-copy">Such exploits were resolved by balancing the mana cost and cooldown in
+                    relation
+                    to ability's power. Abilities like "Salvation" were given a high cost and cooldown due
+                    to being able to wipe out multiple enemies in a vast radius, as opposed to abilities like
+                    "Perdition" and "Thunderstride" which dealt damage to enemies in a much smaller radius.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 my-project-content pt-5">
+                <h1>02</h1>
+            </div>
+
+            <div class="col-lg-6 my-project-content pt-5">
+                <h2 class="project-copy">Were the spawn rates too fast or too slow?</h2>
+                <p class="project-copy">Playtesting results depict that the spawn rates (the spawn time and
+                    spawn
+                    amount) during the initial
+                    phases of the game were too fast, which caused players to become overwhelmed during the
+                    first few
+                    waves. Thus, players were blindly using abilities and playing very imprudently due to
+                    frustration.
+                </p>
+
+                <p class="project-copy"> This was addressed
+                    by decreasing the spawn time from 0.5 seconds to 2 seconds per Revenant spawned. The amount
+                    of
+                    Revenants spawned per wave was also decreased slightly. As a result, players were able to
+                    ease into
+                    learning the game's mechanics and the purpose of each ability.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 my-project-content pt-5">
+                <h1>03</h1>
+            </div>
+
+            <div class="col-lg-6 my-project-content pt-5">
+                <h2 class="project-copy">Were any abilities overused or underused?</h2>
+                <p class="project-copy">Initially, each swing of "Divine Onslaught" restored mana and was able
+                    to hit
+                    multiple enemies. Many players resorted to just using this ability due to its low risk,
+                    high reward nature. Thus, the other abilities were ignored due to putting players in a
+                    compromised
+                    state when using them.</p>
+
+                <p class="project-copy">To remedy this issue, "Divine Onslaught" was altered so that only the
+                    last swing
+                    would restore mana and deal damage to multiple enemies. This made players manage their mana
+                    and time
+                    their
+                    attacks more prudently. As a result, the other abilities began to see more usage.</p>
+            </div>
+        </div>
+
+        <div class="row my-row">
+            <div class="col-lg-6 my-project-content pt-5">
+                <h1>04</h1>
+            </div>
+
+            <div class="col-lg-6 my-project-content py-5">
+                <h2 class="project-copy">Did players combo their abilities?</h2>
+                <p class="project-copy">The abilities were designed in such a way that players could create
+                    various
+                    combos with them. This was seen prominently during playthrough sessions.</p>
+
+                <p class="project-copy">For example, many players used "Divine Onslaught" in conjunction with
+                    "Perdition" to
+                    create a 4-hit combo. Many of them would also use "Thunderstride" to
+                    dash to a safe spot on the map then immediately heal with "Hellfire Flux."</p>
+            </div>
+        </div>
+
+        <!-- Reflection -->
+        <div class="row my-row">
+            <div class="col-lg-12 my-project-content py-5">
+                <h2 class="hero-header">"I just had a strong concept of what a game designer is — Someone who designs
+                    products to make people happy. That's his purpose."</h2>
+                <h6>- Toru Iwatani, creator of Pac-Man</h6>
+            </div>
+
+            <div class="col-lg-12 my-project-content pb-5">
+                <h2>Reflection</h2>
+                <p class="project-copy">The process of this project was never linear, as I constantly iterated on this
+                    project based on feedback from playtesters. In hindsight, it was extremely ambitious of me to
+                    create a 3D game on an engine I've never used before.</p>
+
+                <p class="project-copy">Even so, I was able to overcome the steep learning curve by setting goals
+                    to accomplish by the end of every week, be it learning how to efficiently use the Blueprint System
+                    or learning how to animate characters. I
+                    would
+                    dedicate at least 2
+                    hours of my day reading documentation and watching tutorials.</p>
+
+                <p class="project-copy">From this experience, I also learned the importance of perseverance. There
+                    were days where I would ask myself, "Why am I doing this? This is too much for one person."
+                    Nevertheless, I conquered that mentality in hopes of seeing my vision come to life and
+                    seeing players enjoy my game.</p>
+            </div>
+        </div>
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="float-left py-3">
+                <p> Designed and coded by me! </p>
+            </div>
+
+            <div class="float-right py-3">
+                <p class="text-right"> mrobles@sfu.ca </p>
+            </div>
+
+            <div class="clearfix"></div>
+        </footer>
+
+    </div>
+
+    <!-- JQuery Script -->
+    <script>
+
+        // Change Ability Descriptions
+        var $textBox = $(".textBox");               // get 'em all!
+        $textBox.eq(0).fadeIn();                    // FadeIn first one
+
+        $("[data-showid]").on("click", function () {  // Buttons click (Use data-* attribute!) 
+            var $box = $("#" + this.dataset.showid);   // Get the target box ID element
+            $textBox.not($box).hide();                // Hide all but targeted one
+            $box.stop().fadeIn();                 // FadeToggle target box
+        });
+
+        // Change Ability Videos
+        jQuery(document).ready(function ($) {
+
+            $('.1').on({
+                'click': function () {
+                    $('#change-image').attr('src', 'videos/Passive2.mp4');
+                }
+            });
+
+            $('.2').on({
+                'click': function () {
+                    $('#change-image').attr('src', 'videos/Left-Click3.mp4');
+                }
+            });
+
+            $('.3').on({
+                'click': function () {
+                    $('#change-image').attr('src', 'videos/Left-Shift2.mp4');
+                }
+            });
+
+            $('.4').on({
+                'click': function () {
+                    $('#change-image').attr('src', 'videos/Q3.mp4');
+                }
+
+            }
+            );
+
+            $('.5').on({
+                'click': function () {
+                    $('#change-image').attr('src', 'videos/E2.mp4');
+                }
+            }
+            );
+
+            $('.6').on({
+                'click': function () {
+                    $('#change-image').attr('src', 'videos/Salvation2.mp4');
+                }
+            }
+
+            );
+        });
+
+        AOS.init();
+
+        //JAVASCRIPT SET ACTIVE BUTTON
+
+        // Get the container element
+        var btnContainer = document.getElementById("ability-row");
+
+        // Get all buttons with class="btn" inside the container
+        var btns = btnContainer.getElementsByClassName("btn");
+
+        // Loop through the buttons and add the active class to the current/clicked button
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+
+    </script>
+
+</body>
+
+</html>

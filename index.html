@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mark Robles</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--AOS-->
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--AOS-->
+
+    <script src="hide.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Container Fluid -->
+    <div class="container-fluid my-container-fluid">
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg p-0">
+            <a class="navbar-brand py-3" href="index.html">Mark Robles</a>
+
+            <!-- Dropdown Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"> <img src="images/dropdown.png" id="dropdown-button"
+                        class="img-fluid">
+                </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+
+                    <!-- Resume -->
+                    <li class="nav-item pr-3">
+                        <a class="nav-link" href="resume.html">Resume</a>
+                    </li>
+
+                    <!-- About -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Hero -->
+        <div class="jumbotron jumbotron-fluid">
+
+            <h1 class="hero-header">I'm Mark Robles, an aspiring game designer who loves to create games with novel
+                mechanics and worlds with enticing stories.</h1>
+
+            <!--
+            <h1 class="hero-header">I AM MARK ROBLES</h1>
+            <h2>An aspiring game designer who loves to create games with novel mechanics and narrative-rich worlds.</h2>
+            -->
+        </div>
+
+        <!-- Beyond Hope Project -->
+        <div class="row my-row">
+            <div class="col-lg-6 my-project-content pt-5 pb-4">
+                <h6>UNREAL ENGINE 4</h6>
+                <h1>Beyond Hope</h1>
+                <p class="project-copy">A third-person, single-player RPG inspired by zombie survival games. Play as
+                    Avernus, the God of Fire and Lightning, as he attempts to survive against endless waves of
+                    Revenants.</p>
+            </div>
+
+            <div class="col-lg-6 my-project-img pt-lg-5 pb-5">
+
+                <a href="beyondhope.html">
+                    <div class="hovereffect">
+                        <img src="images/beyondhope.png" id="beyond-hope-img" alt="" class="img-fluid float-center emb"
+                            data-aos="fade-up" data-aos-duration="1500">
+
+                        <div class="overlay">
+                            <h2 class="info">View Project</h2>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+
+        <!-- Argon Chalice Project -->
+        <div class="row my-row">
+            <div class="col-lg-6 my-project-content pt-5 pb-4">
+                <h6>UNITY</h6>
+                <h1>Argon Chalice</h1>
+                <p class="project-copy">A top-down, 2D tower defense game with a rich narrative. Play as
+                    Lucerna, a half-demon, half-angel wizard who vows to unravel her mysterious past.</p>
+            </div>
+
+            <div class="col-lg-6 my-project-img pt-lg-5 pb-5">
+                <!--
+            <a href="argonchalice.html"><img src="images/argonchalice.png" id="argonchalice-hope-img" alt=""
+                    class="img-fluid emb" data-aos="fade-up" data-aos-duration="1500"></a>
+                    -->
+                <a href="argonchalice.html">
+                    <div class="hovereffect">
+                        <img src="images/argonchalice.png" id="argonchalice-hope-img" alt="" class="img-fluid emb"
+                            data-aos="fade-up" data-aos-duration="1500">
+
+                        <div class="overlay">
+                            <h2 class="info">View Project</h2>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="float-left py-3">
+                <p> Designed and coded by me! </p>
+            </div>
+
+            <div class="float-right py-3">
+                <p class="text-right"> mrobles@sfu.ca </p>
+            </div>
+
+            <div class="clearfix"></div>
+        </footer>
+
+    </div>
+
+
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
