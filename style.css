@@ -6,7 +6,7 @@ body{
     font-family: 'Neue Montreal Regular', sans-serif;
     line-height: 2;
     margin: 0;
-    background-color: #ebebeb;
+    background-color: #fcfcfc;
     height:100%;
 
 }
@@ -18,7 +18,7 @@ body{
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: #ebebeb; 
+    background: #fcfcfc; 
   }
    
   /* Handle */
@@ -44,10 +44,10 @@ body{
 
 @font-face {
     font-family: "Neue Montreal Regular";
-    src: url("fonts/NeueMontreal-Regular.otf");
+    src: url("fonts/FiraSans-Regular.ttf");
 
     font-family: "Neue Montreal Bold";
-    src: url("fonts/NeueMontreal-Bold.otf");
+    src: url("fonts/Inconsolata-Bold.ttf");
   }
 
 /* Mobile First!!! */
@@ -81,7 +81,7 @@ p, li, .navbar-brand, a{
 }
 
 .jumbotron{
-    background-color: #ebebeb;
+    background-color: #fcfcfc;
     color: #111111;
     border-bottom: 1px solid #111111;
     padding-top: 100px;
@@ -102,8 +102,12 @@ nav{
 
 nav a{
     color: #111111;
-    font-family: 'Neue Montreal Regular', sans-serif;
+    font-family: 'Neue Montreal Bold', sans-serif;
 }
+
+a:hover {
+    color: #008656;
+  }
 
 .nav-item{
     padding: 0;
@@ -137,7 +141,7 @@ ul{
 
 .footer{
     color: #111111;
-    background-color: #ebebeb;
+    background-color: #fcfcfc;
 }
 
 /** Button **/
@@ -194,7 +198,7 @@ ul{
     top:0;
     left:0;
     opacity:0;
-    background-color:rgba(0,0,0,0.5);
+    background-color:rgba(41,41,41,0.5);
     -webkit-transition:all .4s ease-in-out;
     transition:all .4s ease-in-out
     }
@@ -414,7 +418,3 @@ ul{
         }
 
 }
-
-
-
-
