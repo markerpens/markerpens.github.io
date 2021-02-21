@@ -11,16 +11,14 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!--AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <link rel="stylesheet" type="text/css" href="style.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" data-auto-replace-svg="nest"></script>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!--AOS-->
-
-    <script src="hide.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src='hide.js' type="text/javascript"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
@@ -43,8 +41,8 @@
             <!-- Dropdown Button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"> <img src="images/dropdown.png" id="dropdown-button" class="img-fluid"
-                        data-aos="fade-up" data-aos-duration="1500">
+                <span class="navbar-toggler-icon"> <img src="images/hamburger.png" id="dropdown-button"
+                        class="img-fluid" data-aos="fade-up" data-aos-duration="1500">
                 </span>
             </button>
 
@@ -53,7 +51,7 @@
 
                     <!-- Resume -->
                     <li class="nav-item pr-3">
-                        <a class="nav-link" href="misc/MarkRoblesResume2021.pdf" target="_blank">Resume</a>
+                        <a class="nav-link" href="misc/MarkRoblesResume2021_UPDATED.pdf" target="_blank">Resume</a>
                     </li>
 
                     <!-- About -->
@@ -67,20 +65,32 @@
 
         <!-- Overview -->
         <div class="jumbotron jumbotron-fluid">
-            <h1 class="hero-header">Beyond Hope is a passion project with the goal of amalgamating mechanics
+            <h1 class="hero-header">Beyond Hope is a passion project with the goal of fusing mechanics
                 from both role-playing and zombie survival games to create a familiar, yet unique gameplay
                 experience.</h1>
         </div>
 
+        <!-- Down Arrow -->
+        <div class="col-lg-12">
+            <!--
+            <a class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon="" href="#scroll-down-to"></a>
+            -->
+
+            <a class="ca3-scroll-down-link ca3-scroll-down-arrow down-arrow" data-ca3_iconfont="ETmodules"
+                data-ca3_icon="" href="#scroll-down-to">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+
         <!-- Roles -->
-        <div class="row my-row">
+        <div class="row my-row" id="scroll-down-to">
 
             <div class="col-lg-3 py-3 pt-5 py-lg-5">
-                <h3>Role</h3>
+                <h3>Skills</h3>
                 <ul>
-                    <li>Game Developer</li>
-                    <li>Game Designer</li>
-                    <li>Animator</li>
+                    <li>Game Design</li>
+                    <li>Scripting</li>
+                    <li>Animation</li>
                 </ul>
             </div>
 
@@ -94,10 +104,10 @@
             </div>
 
             <div class="col-lg-3 py-3 py-lg-5">
-                <h3>Credits</h3>
+                <h3>Contributors</h3>
                 <ul>
-                    <li>Marcos Jose</li>
-                    <li>Kamil Bielski</li>
+                    <li>Marcos Jose - Sound Design</li>
+                    <li>Kamil Bielski - Art</li>
                 </ul>
             </div>
 
@@ -112,30 +122,37 @@
         <!-- Contributions -->
         <div class="row">
             <div class="col-lg-12 my-project-content pt-5">
-                <h1>Contributions</h1>
-                <p class="project-copy">I created the entire game using Unreal Engine 4's Blueprint System. External
-                    assets
-                    such as 3D models and animations were used from the Mixamo website.</p>
+                <h1>Initial Process</h1>
+                <p class="project-copy">I wanted to challenge myself and create a 3D role-playing game in my first game
+                    engine, Unreal Engine 4. I gave myself four months to incorporate all of the aspects I loved about
+                    role-playing games
+                    and develop a simple, replayable game with engaging and satisfying combat mechanics. This project
+                    was also a medium for me to further bolster my skills as a game developer and designer, as I have
+                    never tackled a solo project with such a huge scale. </p>
             </div>
         </div>
 
         <div class="row">
             <div class="col-lg-12 my-project-content pt-5">
-                <h2>General Game Design</h2>
-                <p class="project-copy">I designed the game's mechanics and balancing, such as the damage and mana cost
-                    of abilities. I also designed abilities in such a way that each of them grants some form of utility
-                    in combat other than damage, i.e. maneuvering away from hordes of enemies or restoring health and
-                    mana.</p>
+                <h2>Game Design Skills</h2>
+                <p class="project-copy">I designed Beyond Hope's combat mechanics, such as the damage,
+                    utilty, and mana cost of abilities. As a result, learned the intracicies of game balancing, notably
+                    improving the rewards and relationships between game elements to create positive experienes for the
+                    player.</p>
             </div>
         </div>
 
         <div class="row">
             <div class="col-lg-12 my-project-content pt-5">
-                <h2>Scripting</h2>
+                <h2>Scripting Skills</h2>
                 <p class="project-copy">Using Unreal Engine 4's Blueprint System (essentially visual coding), I scripted
                     the entirety of the game
                     including the enemy AI, the wave
-                    system, and the combat system.</p>
+                    system, and the combat system. From this, I was able to become a more efficient scripter - I could
+                    now
+                    utilize visual scripting as a testing method to create pseudo-scripts before programmatically coding
+                    them in future projects. Thus, being able to visualize how scripts were
+                    linked together enabled me to understand the programming side of scripting more. </p>
             </div>
 
             <div class="col-lg-12 my-project-content pb-5 pt-3">
@@ -150,9 +167,11 @@
 
         <div class="row">
             <div class="col-lg-12 my-project-content pt-4">
-                <h2>Animations</h2>
+                <h2>Animation Skills</h2>
                 <p class="project-copy">I animated the characters using Mixamo's custom animations and 3D
-                    character assets, and scripted them in with Unreal Engine's Animation Tools.</p>
+                    character assets, and scripted them in with Unreal Engine's Animation Tools. I learned how to
+                    manipulate the bones of 3D assets to achieve the desired animation - to convey the intents of
+                    attacks more effectively. </p>
             </div>
             <div class="col-lg-12 my-project-content pb-5 pt-3">
                 <div class="embed-responsive embed-responsive-16by9">
@@ -168,7 +187,9 @@
             <div class="col-lg-12 my-project-content pt-4">
                 <h2>VFX</h2>
                 <p class="project-copy">I utilized Unreal Engine's free VFX assets to script special effects for
-                    visual feedback regarding combat, such as casting abilities and hitting enemies.</p>
+                    visual feedback regarding combat, such as casting abilities and hitting enemies. I learned to
+                    manipulate the size and intensity of visual effects to communicate the purpose and potency of
+                    abilities.</p>
             </div>
             <div class="col-lg-12 my-project-content pb-5 pt-3">
                 <div class="embed-responsive embed-responsive-16by9">
@@ -192,17 +213,17 @@
                     crave nothing but flesh and blood. Avernus, the God of Thunder and Hellfire, is the last living
                     being standing in Terros. Will he survive?</p>
 
-                <p class="project-copy">Writing short backstories acts as a brainstorming process for creating the
+                <p class="project-copy">Writing short backstories acted as a brainstorming process for creating the
                     game's mechanics. In this case, it helped me determine the incorporation of role-playing
                     elements
-                    such
-                    as activating abilities, as
-                    well as zombie survival elements, such as fighting perpetual hordes of enemies.</p>
+                    and zombie survival elements such
+                    as tactical ability usage
+                    and fending off perpetual hordes of enemies.</p>
             </div>
 
             <div class="col-lg-6 my-project-content py-5">
                 <img src="images/avernus-placeholder.png" class="img-fluid">
-                <h6>Artwork by Kamil Bielski</h6>
+                <h6>Illustration of a young Avernus by Kamil Bielski</h6>
             </div>
 
         </div>
@@ -215,7 +236,7 @@
                     as
                     Dragon
                     Age: Origins, were too repetitive. It was mostly static, wherein players would stand in one spot
-                    auto-attacking an enemy while occassionally pressing other buttons to activate skills.</p>
+                    auto-attacking an enemy while occassionally pressing other buttons to activate abilities.</p>
             </div>
 
             <!-- Solution -->
@@ -224,33 +245,65 @@
                 <p class="project-copy">I implemented more dynamic a combat system where players could swing their
                     weapons manually
                     instead of auto-attacking.
-                    Players could also activate abilities that enabled them to either
-                    manuever around the map more effectively or deal damage to multiple enemies at once.</p>
+                    To divert away from the passive nature of clicking abilities in older role-playing games, I
+                    developed a more engaging ability system that provided players with utility and tactical benefits.
+                </p>
             </div>
         </div>
 
+        <!-- Abilities Design Process -->
+        <div class="row">
+
+            <div class="col-lg-6 my-project-content pt-5">
+                <h1 class="project-copy">Ability Design</h1>
+                <p class="project-copy">The abilities are designed in a way that provides the player with sustained
+                    utility
+                    such as faster movement, healing, and area of effect damage. This facilitates a fast-paced gameplay
+                    where the player is constantly making tactical choices in combat instead of mindlessly clicking
+                    abilities to reap benefits. For instance, a movement ability can be used to dash away from a
+                    horde of Revenants, creating space to safely activate a healing ability. Conversely, an area of
+                    effect ability can be used to create more space for the player to achieve the same effect.
+                </p>
+            </div>
+
+            <div class="col-lg-6 my-project-content pt-5">
+                <h1 class="project-copy">Inspiration</h1>
+                <p class="project-copy">I garnered inspiration from the combat of games such as Kingdom Hearts and God
+                    Of
+                    War, as these games design combat in such a way that encapsulates the personality of
+                    their protagonists. For instance, Sora utilizes fast, graceful movements to deliver
+                    a flurry of attacks. Kratos prefers to deliver killing blows with minimal, brutish attacks. With
+                    Avernus, I
+                    wanted to encapsulate years of combat experience by animating him so that he puts his entire body
+                    weight into
+                    his swings and dashes, maximizing the leverages of his body to deliver the most force into his
+                    blows.
+            </div>
+        </div>
+
+
         <!-- Abilities -->
         <div class="row my-row">
-            <div class="col-lg-12 col-xl-6 my-project-content py-5" id="ability-row">
-                <h1>Abilities</h1>
+            <div class="col-lg-6 col-xl-6 my-project-content py-5" id="ability-row">
+
 
                 <!-- Ability Buttons -->
-                <button type="button" class="btn active btn-sm pr-md-4 pr-lg-4 pt-3 1" data-showid="1"><img
+                <button type="button" class="btn active btn-sm pr-md-4 pr-lg-4 pt-0 1" data-showid="1"><img
                         src="images/passive.png" class="img-fluid left"></button>
 
-                <button type="button" class="btn btn-sm pr-md-4 pr-lg-4 pt-3 2" data-showid="2"><img
+                <button type="button" class="btn btn-sm pr-md-4 pr-lg-4 pt-0 2" data-showid="2"><img
                         src="images/mouse.png" class="img-fluid left"></button>
 
-                <button type="button" class="btn btn-sm pr-md-4 pr-lg-4 pt-3 3" data-showid="3"><img
+                <button type="button" class="btn btn-sm pr-md-4 pr-lg-4 pt-0 3" data-showid="3"><img
                         src="images/shift.png" class="img-fluid left"></button>
 
-                <button type="button" class="btn btn-sm pr-md-4 pr-lg-4 pt-3 4" data-showid="4"><img src="images/q.png"
+                <button type="button" class="btn btn-sm pr-md-4 pr-lg-4 pt-0 4" data-showid="4"><img src="images/q.png"
                         class="img-fluid left"></button>
 
-                <button type="button" class="btn btn-sm pr-md-4 pr-lg-4 pt-3 5" data-showid="5"><img src="images/r.png"
+                <button type="button" class="btn btn-sm pr-md-4 pr-lg-4 pt-0 5" data-showid="5"><img src="images/r.png"
                         class="img-fluid left"></button>
 
-                <button type="button" class="btn btn-sm pr-md-4 pr-lg-4 pt-3 6" data-showid="6"><img src="images/e.png"
+                <button type="button" class="btn btn-sm pr-md-4 pr-lg-4 pt-0 6" data-showid="6"><img src="images/e.png"
                         class="img-fluid left"></button>
 
                 <!-- Twilight of the Thunder God -->
@@ -285,7 +338,8 @@
                 <div class="my-project-content py-4 pl-0 textBox" id="4">
                     <h6 class="pt-2">Q</h6>
                     <h2>Hellfire Flux</h2>
-                    <p class="project-copy">Avernus draws energy from the depths of Acheron, restoring 30% of his health
+                    <p class="project-copy">Avernus draws energy from the depths of Acheron, restoring 30% of
+                        his health
                         and summoning an ethereal hammer that kills enemies around him for 20 seconds.
                     </p>
                 </div>
@@ -294,7 +348,8 @@
                 <div class="my-project-content py-4 pl-0 textBox" id="5">
                     <h6 class="pt-2">E</h6>
                     <h2>Perdition</h2>
-                    <p class="project-copy">Avernus summons the Hammer of Perdition, oblitering enemies in front of
+                    <p class="project-copy">Avernus summons the Hammer of Perdition, oblitering enemies in front
+                        of
                         him with hellfire.
                     </p>
                 </div>
@@ -303,7 +358,8 @@
                 <div class="my-project-content py-4 pl-0 textBox" id="6">
                     <h6 class="pt-2">R</h6>
                     <h2>Salvation</h2>
-                    <p class="project-copy">Avernus summons the Hammer of Salvation, bringing upon a thunderstorm
+                    <p class="project-copy">Avernus summons the Hammer of Salvation, bringing upon a
+                        thunderstorm
                         that
                         decimates everything in a large radius. He heals 100% of his health.
                     </p>
@@ -320,14 +376,16 @@
             </div>
         </div>
 
+
         <!-- Core Gameplay -->
         <div class="row my-row">
             <div class="col-lg-12 my-project-content pt-5 pb-4">
-                <h1>Gameplay</h1>
+                <h1>Gameplay Demo</h1>
                 <p class="project-copy">The player must survive against endless hordes of Revenants for as long as
                     they
                     can. More Revenants are spawned each wave, and the player can eliminate
-                    them with abilities. Health and mana management are also of utmost importance. Should the player's
+                    them with abilities. Health and mana management are also of utmost importance. Should the
+                    player's
                     health
                     deplete to 0, they will lose the game.</p>
             </div>
@@ -343,13 +401,13 @@
             </div>
         -->
 
-        <div class="col-lg-12 my-project-content pb-5">
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1MzJFCGDXlo"
-                    allowfullscreen></iframe>
+            <div class="col-lg-12 my-project-content pb-5">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1MzJFCGDXlo"
+                        allowfullscreen></iframe>
+                </div>
+                <h6 class="pt-3">A brief playthrough showcasing gameplay mechanics</h6>
             </div>
-            <h6 class="pt-3">A brief playthrough showcasing gameplay mechanics</h6>
-        </div>
 
         </div>
 
@@ -361,12 +419,21 @@
             </div>
 
             <div class="col-lg-6 my-project-content pt-5">
+                <!--
                 <h2 class="project-copy">What were the results?</h2>
                 <p class="project-copy">
                     By creating various
-                    questions that target potential unbalanced aspects of the game such as abilities and spawn rates, it
+                    questions that target potential unbalanced aspects of the game such as abilities and spawn
+                    rates, it
                     helped me balance them
                     accordingly by analyzing the playtesting results.</p>
+                    -->
+
+                <h2 class="project-copy">Who were the playtesters?</h2>
+                <p class="project-copy">
+                    I gathered playtesters of various gaming experiences, ranging from avid role-playing gamers to
+                    non-gamers. This was done to investigate whether players from both ends of the spectrum were able to
+                    quickly grasp the game mechanics to formulate unique strategies with abilities.</p>
             </div>
         </div>
 
@@ -448,34 +515,37 @@
             </div>
 
             <div class="col-lg-6 my-project-content py-5">
-                <h2 class="project-copy">Did players combo their abilities?</h2>
-                <p class="project-copy">The abilities were designed in such a way that players could create
-                    various
-                    combos with them. This was seen prominently during playthrough sessions.</p>
+                <h2 class="project-copy">Did players develop strategies with abilities?</h2>
+                <p class="project-copy">Players were able to quickly grasp that the abilities synergized with one
+                    another. A common tactic was to utilize "Thunderstride" to get away from a horde to safely use
+                    "Hellfire Flux."</p>
 
-                <p class="project-copy">For example, many players used "Divine Onslaught" in conjunction with
-                    "Perdition" to
-                    create a 4-hit combo. Many of them would also use "Thunderstride" to
-                    dash to a safe spot on the map then immediately heal with "Hellfire Flux."</p>
+                <p class="project-copy">This was exactly what I intended to invoke in my game design. What I also
+                    noticed was veteran role-playing gamers would use the map's terrain to their advantage - they would
+                    position themselves in narrow pathways to create choke points and use area of effect abilities to
+                    flush out large hordes.</p>
             </div>
         </div>
 
         <!-- Reflection -->
         <div class="row my-row">
             <div class="col-lg-12 my-project-content py-5">
-                <h2 class="hero-header">"I just had a strong concept of what a game designer is — Someone who designs
+                <h2 class="hero-header">"I just had a strong concept of what a game designer is — Someone who
+                    designs
                     products to make people happy. That's his purpose."</h2>
                 <h6>- Toru Iwatani, creator of Pac-Man</h6>
             </div>
 
             <div class="col-lg-12 my-project-content pb-5">
                 <h2>Reflection</h2>
-                <p class="project-copy">The process of this project was never linear, as I constantly iterated on this
+                <p class="project-copy">The process of this project was never linear, as I constantly iterated on
+                    this
                     project based on feedback from playtesters. In hindsight, it was extremely ambitious of me to
                     create a 3D game on an engine I've never used before.</p>
 
                 <p class="project-copy">Even so, I was able to overcome the steep learning curve by setting goals
-                    to accomplish by the end of every week, be it learning how to efficiently use the Blueprint System
+                    to accomplish by the end of every week, be it learning how to efficiently use the Blueprint
+                    System
                     or learning how to animate characters. I
                     would
                     dedicate at least 2
@@ -491,16 +561,22 @@
 
         <!-- Footer -->
         <footer class="footer">
+
             <div class="float-left py-3">
-                <p> Designed and coded by me! </p>
+                <a class="text-left next-project-footer" href="index.html"> Home </a>
             </div>
 
+
             <div class="float-right py-3">
-                <p class="text-right"> mrobles@sfu.ca </p>
+                <a class="text-right next-project-footer" href="argonchalice.html"> Next Project </a>
             </div>
 
             <div class="clearfix"></div>
         </footer>
+
+        <button id="back-to-top" type="button">
+            <i class="fas fa-chevron-up"></i>
+        </button>
 
     </div>
 
