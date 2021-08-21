@@ -1,14 +1,22 @@
 /** Body **/
 
 body {
-    color: #111111;
+    color: #2db82d;
     /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;*/
-    font-family: 'Neue Montreal Regular', sans-serif;
+    font-family: 'Fira Sans Regular', sans-serif;
     line-height: 2;
     margin: 0;
-    background-color: #fcfcfc;
+    background-color: #111111;
     height: 100%;
 }
+
+img {
+    opacity: 0.75;
+}
+
+/* .avatar {
+    text-align: center;
+} */
 
 html {
     scroll-behavior: smooth;
@@ -23,19 +31,19 @@ html {
 /* Track */
 
 ::-webkit-scrollbar-track {
-    background: #fcfcfc;
+    background: #111111;
 }
 
 /* Handle */
 
 ::-webkit-scrollbar-thumb {
-    background: #929292;
+    background: #2db82d;
 }
 
 /* Handle on hover */
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #111111;
+    background: #196619;
 }
 
 /** Container **/
@@ -46,12 +54,12 @@ html {
     width: 90%;
 }
 
-/** Font Sizes **/
+/** Font Utils **/
 
 @font-face {
-    font-family: "Neue Montreal Regular";
+    font-family: "Fira Sans Regular";
     src: url("fonts/FiraSans-Regular.ttf");
-    font-family: "Neue Montreal Bold";
+    font-family: "Inconsolata Bold";
     src: url("fonts/Inconsolata-Bold.ttf");
 }
 
@@ -60,16 +68,17 @@ html {
 .hero-header {
     font-size: 1.8rem;
     line-height: 1.6;
+    color: #E0E0E0;
 }
 
 h1 {
     font-size: 1.8rem;
-    font-family: 'Neue Montreal Bold', sans-serif;
+    font-family: 'Inconsolata Bold', sans-serif;
 }
 
 h2, h3, .design-questions {
     font-size: 1.2rem;
-    font-family: 'Neue Montreal Bold', sans-serif;
+    font-family: 'Inconsolata Bold', sans-serif;
 }
 
 h1, h2, h6 {
@@ -77,40 +86,44 @@ h1, h2, h6 {
 }
 
 h6 {
-    color: #929292;
+    color: #696969;
 }
 
-p, li, .navbar-brand, a {
+p, li, a {
     font-size: 0.9rem;
-    color: #111111;
+    color: #E0E0E0;
 }
 
 .jumbotron {
-    background-color: #fcfcfc;
-    color: #111111;
-    border-bottom: 1px solid #111111;
+    background-color: #111111;
+    color: #E0E0E0;
+    border-bottom: 1px solid #929292;
     padding-top: 100px;
     padding-bottom: 80px;
     margin: 0;
 }
 
 .contributions-row {
-    border-bottom: 1px solid #111111;
+    border-bottom: 1px solid #929292;
+}
+
+.playtest-no {
+    color: #696969;
 }
 
 /** Navbar **/
 
 nav {
-    border-bottom: 1px solid #111111;
+    border-bottom: 1px solid #929292;
 }
 
-nav a {
-    color: #111111;
-    font-family: 'Neue Montreal Bold', sans-serif;
+nav a, .navbar-brand {
+    color: #32CD32;
+    font-family: 'Inconsolata Bold', sans-serif;
 }
 
 a:hover, a:focus {
-    color: #008656;
+    color: #196619;
     text-decoration: none;
 }
 
@@ -123,14 +136,18 @@ a:hover, a:focus {
 }
 
 .game-links {
-    color: #008656;
-    font-family: 'Neue Montreal Bold', sans-serif;
+    color: #2db82d;
+    font-family: 'Inconsolata Bold', sans-serif;
     font-size: 1.8rem;
 }
 
 .game-links:hover, .game-links:focus {
-    color: #929292;
+    color: #196619;
 }
+
+/* b {
+    color: #2db82d;
+} */
 
 /** Content **/
 
@@ -139,7 +156,7 @@ a:hover, a:focus {
 }
 
 .my-row {
-    border-bottom: 1px solid #111111;
+    border-bottom: 1px solid #929292;
 }
 
 .project-copy {
@@ -159,17 +176,17 @@ ul {
 /** Footer **/
 
 .footer {
-    color: #111111;
-    background-color: #fcfcfc;
+    color: #E0E0E0;
+    background-color: #111111;
 }
 
-.next-project-footer {
-    color: #111111;
-    font-family: 'Neue Montreal Bold', sans-serif;
+.next-project-footer, .footer-content {
+    color: #E0E0E0;
+    font-family: 'Inconsolata Bold', sans-serif;
 }
 
 .figma-link:hover, .figma-link:focus {
-    color: #008656;
+    color: #196619;
 }
 
 /** Buttons **/
@@ -227,7 +244,7 @@ ul {
     top: 0;
     left: 0;
     opacity: 0;
-    background-color: rgba(41, 41, 41, 0.5);
+    background-color: rgba(17, 17, 17, 0.4);
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out
 }
@@ -278,7 +295,7 @@ ul {
     right: 25px;
     bottom: 15px;
     display: none;
-    color: #008656;
+    color: #32CD32;
     padding: 0;
     border: none;
     background: none;
@@ -305,7 +322,7 @@ ul {
     position: absolute;
     left: 49%;
     bottom: 0px;
-    color: #008656;
+    color: #32CD32;
     text-align: center;
     font-size: 30px;
     -webkit-animation: ca3_fade_move_down 2s ease-in-out infinite;
