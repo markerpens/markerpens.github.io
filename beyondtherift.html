@@ -482,67 +482,6 @@
 
     </div>
 
-    <!-- JQuery Script -->
-    <script>
-
-        // Change Ability Descriptions
-        var $textBox = $(".textBox");               // get 'em all!
-        $textBox.eq(0).fadeIn();                    // FadeIn first one
-
-        $("[data-showid]").on("click", function () {  // Buttons click (Use data-* attribute!) 
-            var $box = $("#" + this.dataset.showid);   // Get the target box ID element
-            $textBox.not($box).hide();                // Hide all bot targeted one
-            $box.stop().fadeIn();                 // FadeToggle target box
-        });
-
-        // Change Ability Videos
-        jQuery(document).ready(function ($) {
-
-            $('.1').on({
-                'click': function () {
-                    $('#change-image').attr('src', 'videos/ST.mp4');
-                }
-            });
-
-            $('.2').on({
-                'click': function () {
-                    $('#change-image').attr('src', 'videos/LG.mp4');
-                }
-            });
-
-            $('.3').on({
-                'click': function () {
-                    $('#change-image').attr('src', 'videos/IG.mp4');
-                }
-            });
-
-            $('.4').on({
-                'click': function () {
-                    $('#change-image').attr('src', 'videos/FG.mp4');
-                }
-
-            }
-            );
-        });
-
-        //JAVASCRIPT SET ACTIVE BUTTON
-
-        // Get the container element
-        var btnContainer = document.getElementById("ability-row");
-
-        // Get all buttons with class="btn" inside the container
-        var btns = btnContainer.getElementsByClassName("btn");
-
-        // Loop through the buttons and add the active class to the current/clicked button
-        for (var i = 0; i < btns.length; i++) {
-            btns[i].addEventListener("click", function () {
-                var current = document.getElementsByClassName("active");
-                current[0].className = current[0].className.replace(" active", "");
-                this.className += " active";
-            });
-        }
-
-    </script>
 </body>
 
 </html>
