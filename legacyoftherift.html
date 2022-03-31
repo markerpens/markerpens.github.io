@@ -4,7 +4,7 @@
 <head>
     <title>Mark Robles</title>
 
-    <link rel="shortcut icon" type='image/x-icon' href="images/lokir.png">
+    <link rel="shortcut icon" type='image/x-icon' href="images/bjornportrait.png">
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -67,8 +67,8 @@
 
         <!-- Hero -->
         <div class="jumbotron jumbotron-fluid">
-            <h1 class="hero-header">Legacy of the Rift challenges the player's ability to adapt to escalating
-                challenges through the game's intricate mechanics, level design, and narrative.</h1>
+            <h1 class="hero-header">Legacy of the Rift tests the player's ability to adapt to escalating
+                challenges through the game's intricate mechanics, level design, and narrative systems.</h1>
             <a class="game-links" href="https://hanna-luu.itch.io/legacy-of-the-rift" target="_blank">Download
                 Legacy of the Rift here.</a>
         </div>
@@ -88,9 +88,9 @@
             <div class="col-lg-3 col-md-6 col-sm-6 col-6 py-3 pt-5 py-lg-5">
                 <h3>Role</h3>
                 <ul>
-                    <li>Game Designer</li>
-                    <li>Game Developer</li>
-                    <li>Narrative Designer</li>
+                    <li>Lead Game Designer</li>
+                    <li>Assistant Game Developer</li>
+                    <li>Lead Narrative Designer</li>
                 </ul>
             </div>
 
@@ -114,40 +114,536 @@
 
             <div class="col-lg-3 col-md-6 col-sm-6 col-6 py-3 pb-4 py-lg-5 pb-5">
                 <h3>Date</h3>
-                <p>September - December 2022</p>
+                <p>September - December 2021</p>
+            </div>
+        </div>
+
+        <!-- Overview -->
+        <div class="row my-row">
+            <div class="col-lg-12 my-project-content pt-5 pb-4">
+                <h1>Overview</h1>
+                <p class="project-copy">
+                    Legacy of the Rift was a semester-long project for a class called IAT 410: Advanced Game Design. The
+                    team was tasked to rapidly iterate interesting game mechanics per week, with the freedom to
+                    implement any other aspects that facilitated increased player engagement. As such, a sequel to my
+                    previous project, "Beyond the Rift", was proposed, with improved combat mechanics in the form of
+                    switching characters for utility as well as the same narrative design systems that created an
+                    alluring story.</p>
+            </div>
+        </div>
+
+        <!-- My Role -->
+        <div class="row">
+            <div class="col-lg-12 my-project-content pt-5 py-4">
+                <h1>My Role</h1>
+                <p class="project-copy">I was responsible for designing and balancing the combat mechanics for the 3
+                    protagonists (Legacies) and antagonists (4 enemy types and 2 bosses). I also designed and
+                    implemented branching narrative systems through the utilization of Fungus, a Unity tool that enables
+                    one
+                    to create branching dialogue much more efficiently.</p>
+            </div>
+
+            <div class="col-lg-12 my-project-content pb-5">
+                <img src="images/ltr.PNG" id="beyond-hope-img" alt="" class="img-fluid float-center emb">
+                <a href="https://www.figma.com/file/LNiLQ334la5KiX79NmeOOQ/?node-id=433%3A6" target="_blank">
+                    <h6 class="pt-3 figma-link">[FIGMA LINK] Legacy of the Rift Design Document</h6>
+                </a>
+            </div>
+        </div>
+
+        <div class="row my-row">
+            <div class="col-lg-12 my-project-content py-4">
+                <h2>Inspirations / Demo</h2>
+                <p class="project-copy"> Character switching mechanics were inspired from games such as Ben 10: Alien
+                    Force, where each character provided some form of utility in map traversal/exploration, or combat.
+                </p>
+            </div>
+
+            <div class="col-lg-12 my-project-content pb-5">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v=wuzUQAE0a58"
+                        allowfullscreen></iframe>
+                </div>
+                <h6 class="pt-3">Legacy of the Rift Evil Playthrough</h6>
+            </div>
+        </div>
+
+        <!-- Problem -->
+        <div class="row my-row">
+            <div class="col-lg-6 my-project-content py-5">
+                <h1>Problem</h1>
+                <p class="project-copy">A pervading problem in the initial iterations of the project was balancing the 3
+                    Legacy abilities in a way that players could intuitively determine which character they wanted to
+                    switch to based on combat circumstances.
+                </p>
+
+                <p class="project-copy">With this came another design issue: the number of abilities per character which
+                    may prove overwhelming for players to memorize. Due to the convention of RPG games having one
+                    character with a set of abilities, wouldn't it be too much for players to manage more than one
+                    character with multiple abilities, albeit remember their utility?
+                </p>
+            </div>
+
+            <!-- Solution -->
+            <div class="col-lg-6 my-project-content py-sm-5 pb-5">
+                <h1>Solution</h1>
+                <p class="project-copy">
+                    The proposed solution was to devise clear utility roles for each Legacy, and to ensure that
+                    abilities synergized well with one another to facilitate character switching and ultimately the
+                    creation of various strategies that came such mechanics.
+                </p>
+
+                <p class="project-copy">
+                    As such, Legacies were given one basic attack, one ability, and combined ultimate abilities - all of
+                    which provided distinct utility and crafted a role for each of them. This came in the form of
+                    a Holy Trinity system: DPS, Defense, and Healing. Secondary aspects to those roles were also added,
+                    such as evasion, crowd control, and debuffing.
+                </p>
+            </div>
+        </div>
+
+        <!-- Mechanics -->
+        <div class="row my-row">
+            <div class="col-lg-6 my-project-content py-5">
+                <h1>Core Mechanics / Loops</h1>
+                <p class="project-copy">Players must progress through 3 levels, engaging in narrative systems (dialogue
+                    choices)
+                    in between
+                    them. Player decisions in dialogue choices determine which of the 2 bosses they will face in the
+                    endgame. Players must defeat waves of different enemies called the Scourged by using the
+                    their abilities. They can switch between Legacies using the 1,2,3 keys.
+                </p>
+            </div>
+
+            <div class="col-lg-6 my-project-content py-5">
+                <h1>Zeal System</h1>
+                <p class="project-copy">Players manage a blue Zeal bar and an orange Zeal bar. The blue Zeal bar is the
+                    resource they spend when activating their Right-Click abilities, and regenerates over time. The
+                    orange Zeal bar is the resource that is built up and spent; once this bar is maximized by damaging
+                    enemies, players can activate their ultimate ability.
+                </p>
+            </div>
+        </div>
+
+        <!-- LOKIR -->
+        <div class="row">
+
+            <div class="col-lg-6 my-project-content pt-5">
+                <h1 class="project-copy">Lokir Ironhand</h1>
+                <p class="project-copy">Lokir trained the most
+                    under
+                    the wing of his father's mentor, Khajiit D'Amelio, to hone his Gifted abilities. Lokir quickly
+                    mastered the
+                    art of
+                    the
+                    Mirage Form, combining Khajiit's agile combat style and his own clones to create a novel fighting
+                    style of both evasion and deception. He
+                    provides utility in the form of mobility, repositioning, and DPS.
+                </p>
+            </div>
+
+            <div class="col-lg-6 my-project-content pt-5">
+                <img src="images/lokirwithbaby.png" class="img-fluid speakers lokir">
+            </div>
+        </div>
+
+
+        <!-- LOKIR Abilities -->
+        <div class="row">
+            <div class="col-lg-6 col-xl-6 my-project-content py-5" id="ability-row">
+
+
+                <!-- Ability Buttons -->
+                <button type="button" class="btn bt1 active btn-sm pr-md-4 pr-lg-4 pt-0 1" data-showid="1"><img
+                        src="images/lokirhead.png" class="img-fluid left"></button>
+
+                <button type="button" class="btn bt1 btn-sm pr-md-4 pr-lg-4 pt-0 2" data-showid="2"><img
+                        src="images/lokirability.png" class="img-fluid left"></button>
+
+
+                <!-- Spectral Laceration -->
+                <div class="my-project-content py-4 pl-0 textBox" id="1">
+                    <h6 class="pt-2">Left-Click</h6>
+                    <h2>Spectral Laceration</h2>
+                    <p class="project-copy">Lokir's basic attack propels him forward, phasing through enemies. Each
+                        swing
+                        has a brief cooldown.
+                    </p>
+                </div>
+
+                <!-- Spectral Warlock -->
+                <div class="my-project-content py-4 pl-0 textBox" id="2">
+                    <h6 class="pt-2">Right-Click</h6>
+                    <h2>Spectral Warlock</h2>
+                    <p class="project-copy">Lokir conjures an illusory clone that deals damage to enemies from a
+                        distance for 18 seconds. Lokir can activate the clone a second time to swap places with it.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Ability Video -->
+            <div class="col-lg-12 col-xl-6 my-project-content pb-5 pt-xl-5 vid">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <video class="video-fluid" autoplay playisinline loop muted id="change-image">
+                        <source src="videos/spectral-laceration.mp4" type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <!-- HALVAR -->
+        <div class="row">
+
+            <div class="col-lg-6 my-project-content pt-5">
+                <h1 class="project-copy">Halvar Ironhand</h1>
+                <p class="project-copy">Halvar grew to a towering 7 feet at the age of 15. Due to his large stature,
+                    Halvar began to take interest in learning the Stone Form - a form which demanded great physical
+                    strain from the user to utilize. He vowed to become the best Stone Form user in Wulfgard under
+                    Bjorn's mentorship to protect
+                    his loved ones after the loss of his younger siblings, Bjald and Runa. In combat, Halvar provides
+                    utility in the form of crowd control and stalling.
+
+                </p>
+            </div>
+
+            <div class="col-lg-6 my-project-content pt-5">
+                <img src="images/halvawithbabyr.png" class="img-fluid speakers">
+            </div>
+        </div>
+
+
+        <!-- HALVAR Abilities -->
+        <div class="row">
+            <div class="col-lg-6 col-xl-6 my-project-content py-5" id="ability-row-2">
+
+                <!-- Ability Buttons -->
+                <button type="button" class="btn bt2 active btn-sm pr-md-4 pr-lg-4 pt-0 3" data-showid="3"><img
+                        src="images/halvarhead.png" class="img-fluid left"></button>
+
+                <button type="button" class="btn bt2 btn-sm pr-md-4 pr-lg-4 pt-0 4" data-showid="4"><img
+                        src="images/halvarability.png" class="img-fluid left"></button>
+
+
+                <!-- Hammer Time -->
+                <div class="my-project-content py-4 pl-0 textBox-2" id="3">
+                    <h6 class="pt-2">Left-Click</h6>
+                    <h2>Hammer Time</h2>
+                    <p class="project-copy">Halvar swings his hammer in front of him, smashing the ground to deal damage
+                        multiple
+                        enemies.
+                    </p>
+                </div>
+
+                <!-- Legendary Monolith -->
+                <div class="my-project-content py-4 pl-0 textBox-2" id="4">
+                    <h6 class="pt-2">Right-Click</h6>
+                    <h2>Legendary Monolith</h2>
+                    <p class="project-copy">Create a stone wall in front of you. Grounded enemies and enemy projectiles
+                        cannot pass through the wall and must break it. Only friendly projectiles, clones, and aerial
+                        enemies can pass
+                        through
+                        the
+                        wall.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Ability Video -->
+            <div class="col-lg-12 col-xl-6 my-project-content pb-5 pt-xl-5 vid">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <video class="video-fluid" autoplay playisinline loop muted id="change-image-2">
+                        <source src="videos/hammer-time-yuh.mp4" type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <!-- URSA -->
+        <div class="row">
+
+            <div class="col-lg-6 my-project-content pt-5">
+                <h1 class="project-copy">Ursa Ironhand</h1>
+                <p class="project-copy">Ursa was enamoured by the concept of helping others in need, even when she was
+                    younger. She began to vigorously read books about Sprit Magic ever since the passing of Bjald and
+                    Runa, and took it upon herself to master the Spirit Form under the mentorship of her mother, Mjoll
+                    Ironhand. Ursa provides utility in the form of healing, debuffing, and distance control.
+                </p>
+            </div>
+
+            <div class="col-lg-6 my-project-content pt-5">
+                <img src="images/hjallnatalk.png" class="img-fluid speakers ursa">
+            </div>
+        </div>
+
+        <!-- URSA Abilities -->
+        <div class="row">
+            <div class="col-lg-6 col-xl-6 my-project-content py-5" id="ability-row-3">
+
+                <!-- Ability Buttons -->
+                <button type="button" class="btn bt3 active btn-sm pr-md-4 pr-lg-4 pt-0 5" data-showid="5"><img
+                        src="images/ursahead.png" class="img-fluid left"></button>
+
+                <button type="button" class="btn bt3 btn-sm pr-md-4 pr-lg-4 pt-0 6" data-showid="6"><img
+                        src="images/ursaability.png" class="img-fluid left"></button>
+
+
+                <!-- Munir's Arrow -->
+                <div class="my-project-content py-4 pl-0 textBox-3" id="5">
+                    <h6 class="pt-2">Left-Click</h6>
+                    <h2>Munir's Arrow</h2>
+                    <p class="project-copy">Ursa imbues her arrows with Spiritual Energy to pierce through multiple
+                        enemies,
+                        making her basic attacks apply a slowing hex for a short duration.
+                    </p>
+                </div>
+
+                <!-- Harbinger Of Life -->
+                <div class="my-project-content py-4 pl-0 textBox-3" id="6">
+                    <h6 class="pt-2">Right-Click</h6>
+                    <h2>Harbinger Of Life</h2>
+                    <p class="project-copy">Ursa invokes a wolf spirit at her location to provide health regeneration to
+                        the party for 8 seconds. The party must be within range of the healing aura.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Ability Video -->
+            <div class="col-lg-12 col-xl-6 my-project-content pb-5 pt-xl-5 vid">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <video class="video-fluid" autoplay playisinline loop muted id="change-image-3">
+                        <source src="videos/munir-arrow.mp4" type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <!-- DABABY -->
+        <div class="row">
+
+            <div class="col-lg-6 my-project-content pt-5">
+                <h1 class="project-copy">Hjallna, Morkvar, & Eerika Ironhand</h1>
+                <p class="project-copy">Hjallna, Morkvar, & Eerika are the youngest of the Ironhands. They began to show
+                    signs of Gifted abilities instantly, yet no one knows the extent of their powers yet. After the
+                    Scourge of the Gifted disease ravaged Wulfgard, the three fell ill. As the
+                    Legacies
+                    journeyed to find their parents, they wanted to accompany and help their beloved siblings.
+                </p>
+            </div>
+
+            <div class="col-lg-6 my-project-content pt-5">
+                <img src="images/dababies.png" class="img-fluid dababies">
+            </div>
+        </div>
+
+        <!-- DABABY ULTIMATES -->
+        <div class="row my-row">
+            <div class="col-lg-6 col-xl-6 my-project-content py-5" id="ability-row-4">
+
+                <!-- Ability Buttons -->
+                <button type="button" class="btn bt4 active btn-sm pr-md-4 pr-lg-4 pt-0 7" data-showid="7"><img
+                        src="images/lokirult.png" class="img-fluid left"></button>
+
+                <!-- Munir's Arrow -->
+                <div class="my-project-content py-4 pl-0 textBox-4" id="7">
+                    <h6 class="pt-2">E</h6>
+                    <h2>Ironhand Barrage</h2>
+                    <p class="project-copy">The Ironhand babies imbue their siblings with zeal, enabling them to conjure
+                        the strongest form of their respective abilities at once to deal massive damage to enemies
+                        around
+                        them. Ursa
+                        and
+                        Lokir also leave lingering effects in the form of a defense reduction hex on enemies and a clone
+                        that engages in melee combat for a short duration.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Ability Video -->
+            <div class="col-lg-12 col-xl-6 my-project-content pb-5 pt-xl-5 vid">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <video class="video-fluid" autoplay playisinline loop muted id="change-image-4">
+                        <source src="videos/ironhand-barrage.mp4" type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <!-- ENEMIES -->
+        <div class="row my-row">
+            <div class="col-lg-6 my-project-content pt-5">
+                <h1 class="project-copy">The Scourged</h1>
+                <p class="project-copy">These atrocities are the result of the Scourged of the Gifted
+                    disease turning Gifted into monsters. They only hunger for flesh and blood, attacking villages and
+                    cities to further spread the
+                    affliction and ensure that no living being is left.
+                </p>
+
+                <p class="project-copy">In combat, variations of the Scourged have different fighting styles. From left
+                    to right: Shadowmares attack in melee range; Botchlings pounce at their
+                    targets every 2 seconds; Spear Mares throw spears at a distance; Gorewings fly in the air and can
+                    detach their lower half to attack with their upper half
+                    simultaneously.
+                </p>
+            </div>
+
+            <div class="col-lg-6 my-project-content pt-5">
+                <img src="images/scourged.png" class="img-fluid scourged">
+            </div>
+
+            <div class="col-lg-6 my-project-content pt-5">
+                <h1 class="project-copy">Bjorn Ironhand</h1>
+                <p class="project-copy">The Legendary Demon of the Rift, Bjorn hails as one of the strongest heroes in
+                    Wulfgard's history. When the Scourge of the Gifted infected the majority of Wulfgard, he went on an
+                    expedition to the island of Shadow's End with his wife, Mjoll Ironhand, in an attempt to find a
+                    cure.
+                </p>
+
+                <p class="project-copy"> In combat, Bjorn manipulates space-time by teleporting. He can also fire
+                    demonic projectiles that
+                    damage and hone towards its targets.
+                </p>
+            </div>
+
+            <div class="col-lg-6 my-project-content pt-5">
+                <img src="images/bjornportrait.png" class="img-fluid speakers couple">
+            </div>
+
+            <div class="col-lg-6 my-project-content pt-5">
+                <h1 class="project-copy">Mjoll Ironhand</h1>
+                <p class="project-copy">Mjoll is one of the most renowned Spirit Form users in Wulfgard. Due to her
+                    extreme
+                    proficiency in healing and hexing, most thought that she was able to heal any form of
+                    disease...except one. Mjoll accompanied Bjorn to the expedition to Shadow's End, hoping that her
+                    skills will prove useful in finding a cure...
+                </p>
+
+                <p class="project-copy">In combat, Mjoll can conjure a poisonous field of gas that deals damage over
+                    time to anyone caught in it. Mjoll can also summon various spirits to aid her in combat.
+                </p>
+            </div>
+
+            <div class="col-lg-6 my-project-content pt-5">
+                <img src="images/mjoll-new.png" class="img-fluid speakers couple">
+            </div>
+        </div>
+
+        <!-- Playtesting -->
+        <div class="row">
+            <div class="col-lg-6 my-project-content pt-5">
+                <h1>Playtesting</h1>
+            </div>
+
+            <div class="col-lg-6 my-project-content pt-5">
+                <h2 class="project-copy">Who were the playtesters?</h2>
+                <p class="project-copy"> The team gathered gathered individuals of various gaming experiences and ages
+                    as a means to gauge how intuitive the mechanics and controls of the game were, as well as whether or
+                    not the narrative itself bolstered the movitation to progress through the game's story.
+
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 my-project-content pt-5">
+                <h1 class="playtest-no">01</h1>
+            </div>
+
+            <div class="col-lg-6 my-project-content pt-5">
+                <h2 class="project-copy">Were players able to remember the utility of each of the 3 Legacies?
+                </h2>
+                <p class="project-copy">Initially, each Legacy had one basic attack, two abilities, and one ability.
+                    This resulted in playtesters struggling to remember which Legacy abilities provided the needed
+                    utility during combat situations. The ultimate abilities were also rarely used.</p>
+                </p>
+
+                <p class="project-copy">As such, we reduced the abilities by 1 and combined the ultimate abilities
+                    and their effects together. This more clearly defined the roles for each Legacy,
+                    and players had a less of a cognitive strain remembering the effects of each ability.
+                </p>
+                </p>
+            </div>
+        </div>
+
+        <div class="row my-row">
+            <div class="col-lg-6 my-project-content pt-5">
+                <h1 class="playtest-no">02</h1>
+            </div>
+
+            <div class="col-lg-6 my-project-content py-5">
+
+                <h2 class="project-copy"> Were the usage rates amongst the Legacies well-balanced?
+                </h2>
+                <p class="project-copy">Initially, players gravitated towards Halvar, as his kit provided the most
+                    impact in combat during initial iterations. This was also due to enemy combat styles providing no
+                    counter-play against his wall. As such, Gorewings were introduced, in which they could fly over
+                    Halvar's wall and attack the party.
+                <p>
+
+                <p class="project-copy">Other enemy types also provided counter-play against the rest of the Legacy
+                    kits. Botchlings pounced towards the player, requiring them to time Lokir's dash to phase through
+                    them. Spear Mares threw spears from a distance, punishing those who played too defensively through
+                    Ursa's healing. This
+                    facilitated switching between the Legacies to create diverse strategies and ability combinations to
+                    tackle each level.
+                <p>
             </div>
         </div>
 
         <!-- Reflection -->
-
         <div class="row my-row">
             <div class="col-lg-12 my-project-content py-5">
-                <h2 class="hero-header">Process Coming Soon!</h6>
+                <h2 class="hero-header">"And the winner is...Legacy of the Rift."</h2>
+                <h6>- Eric Ying-Chen Yang (SIAT Senior Game Design Professor)</h6>
+            </div>
+
+            <div class="col-lg-12 my-project-content pb-5">
+                <h2>Reflection & Outcome</h2>
+                <p class="project-copy"> Legacy of the Rift is a culmination (a sequel) of previous academic projects
+                    from our IAT
+                    313: Narrative and
+                    New Media class, and as such, we have already built a world-building base as well as avid players
+                    who were familiar with its characters. Even so, the team aimed to ensure that it could also be a
+                    standalone game.
+                </p>
+
+                <p class="project-copy">Through weekly rapid iterations, I further bolstered my scripting skills and
+                    the efficiency at which I ideated, prototyped, and implemented game mechanics that resonated well
+                    with player experiences.
+                </p>
+
+                <p class="project-copy">Legacy of the Rift won best game out of 7 projects from our IAT 410:
+                    Advanced Game Design class, as determined from industry judges at SFU's Advanced Game Design
+                    Showcase. The game was also showcased on <a
+                        href="https://www.sfu.ca/siat/showcase/fall-2021-project-showcase/projects/iat-410-legacy-of-the-rift.html"
+                        target="_blank" class="sfu-link">SFU's main website</a> as one of the prospective projects of
+                    the
+                    Fall 2021 semester.</p>
             </div>
         </div>
 
         <!-- Footer -->
         <footer class="footer">
-
             <div class="float-left py-3">
                 <a class="text-left next-project-footer" href="index.html"> Home </a>
             </div>
-
-
             <div class="float-right py-3">
-                <a class="text-right next-project-footer" href="beyondhope.html"> Next Project </a>
+                <a class="text-right next-project-footer" href="beyondtherift.html"> Next Project </a>
             </div>
-
             <div class="clearfix"></div>
         </footer>
 
         <button id="back-to-top" type="button">
             <i class="fas fa-chevron-up"></i>
         </button>
-
     </div>
 
     </div>
+
+    <!-- JQuery Script -->
+    <script>
+        var $textBox = $(".textBox"); $textBox.eq(0).fadeIn(), $("[data-showid]").on("click", function () { var t = $("#" + this.dataset.showid); $(this).parent().find($textBox).hide(), t.stop().fadeIn() }), jQuery(document).ready(function (t) { t(".1").on({ click: function () { t("#change-image").attr("src", "videos/spectral-laceration.mp4") } }), t(".2").on({ click: function () { t("#change-image").attr("src", "videos/spectral-warlock.mp4") } }) }); for (var btnContainer = document.getElementById("ability-row"), btns = btnContainer.getElementsByClassName("btn"), i = 0; i < btns.length; i++)btns[i].addEventListener("click", function () { var t = document.getElementsByClassName("bt1 active"); t[0].className = t[0].className.replace("active", ""), this.className += " active" }); var $textBox2 = $(".textBox-2"); $textBox2.eq(0).fadeIn(), $("[data-showid]").on("click", function () { var t = $("#" + this.dataset.showid); $(this).parent().find($textBox2).hide(), t.stop().fadeIn() }), jQuery(document).ready(function (t) { t(".3").on({ click: function () { t("#change-image-2").attr("src", "videos/hammer-time-yuh.mp4") } }), t(".4").on({ click: function () { t("#change-image-2").attr("src", "videos/legendary-monolith.mp4") } }) }); var btnContainer2 = document.getElementById("ability-row-2"), btns2 = btnContainer2.getElementsByClassName("btn"); for (i = 0; i < btns2.length; i++)btns2[i].addEventListener("click", function () { var t = document.getlementsByClassName("bt2 active"); t[0].className = t[0].className.replace("active", ""), this.className += " active" }); var $textBox3 = $(".textBox-3"); $textBox3.eq(0).fadeIn(), $("[data-showid]").on("click", function () { var t = $("#" + this.dataset.showid); $(this).parent().find($textBox3).hide(), t.stop().fadeIn() }), jQuery(document).ready(function (t) { t(".5").on({ click: function () { t("#change-image-3").attr("src", "videos/munir-arrow.mp4") } }), t(".6").on({ click: function () { t("#change-image-3").attr("src", "videos/harbinger-of-life.mp4") } }) }); var btnContainer3 = document.getElementById("ability-row-3"), btns3 = btnContainer3.getElementsByClassName("btn"); for (i = 0; i < btns3.length; i++)btns3[i].addEventListener("click", function () { var t = document.getlementsByClassName("bt3 active"); t[0].className = t[0].className.replace("active", ""), this.className += " active" });
+        AOS.init();
+    </script>
 
 </body>
 

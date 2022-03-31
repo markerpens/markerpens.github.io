@@ -145,6 +145,14 @@ a:hover, a:focus {
     color: #196619;
 }
 
+.sfu-link {
+    color: #2db82d;
+}
+
+.sfu-link:hover, .sfu-link:focus {
+    color: #196619;
+}
+
 /* b {
     color: #2db82d;
 } */
@@ -214,7 +222,7 @@ ul {
     opacity: 1;
 }
 
-.textBox {
+.textBox, .textBox-2, .textBox-3 {
     display: none;
 }
 
@@ -330,6 +338,24 @@ ul {
     animation: ca3_fade_move_down 2s ease-in-out infinite;
 }
 
+.speakers {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+.dababies {
+    margin-top: 40px;
+}
+
+.couple {
+    margin-top: -30px;
+    width: 50%;
+}
+
+
+
 /* Animated scroll arrow animation down */
 
 @-webkit-keyframes ca3_fade_move_down {
@@ -337,9 +363,11 @@ ul {
         -webkit-transform: translate(0, -10px);
         opacity: 0;
     }
+
     50% {
         opacity: 1;
     }
+
     100% {
         -webkit-transform: translate(0, 10px);
         opacity: 0;
@@ -351,9 +379,11 @@ ul {
         -moz-transform: translate(0, -10px);
         opacity: 0;
     }
+
     50% {
         opacity: 1;
     }
+
     100% {
         -moz-transform: translate(0, 10px);
         opacity: 0;
@@ -365,9 +395,11 @@ ul {
         transform: translate(0, -10px);
         opacity: 0;
     }
+
     50% {
         opacity: 1;
     }
+
     100% {
         transform: translate(0, 10px);
         opacity: 0;
@@ -381,9 +413,11 @@ ul {
         -webkit-transform: translate(0, 10px);
         opacity: 0;
     }
+
     50% {
         opacity: 1;
     }
+
     100% {
         -webkit-transform: translate(0, -10px);
         opacity: 0;
@@ -395,9 +429,11 @@ ul {
         -moz-transform: translate(0, 10px);
         opacity: 0;
     }
+
     50% {
         opacity: 1;
     }
+
     100% {
         -moz-transform: translate(0, -10px);
         opacity: 0;
@@ -409,9 +445,11 @@ ul {
         transform: translate(0, 10px);
         opacity: 0;
     }
+
     50% {
         opacity: 1;
     }
+
     100% {
         transform: translate(0, -10px);
         opacity: 0;
@@ -424,6 +462,22 @@ ul {
 
 @media (min-width: 576px) {
     /* By default, bootstrap is a mobile first framework (0px). Thus, everything will be applied to mobile unless specified by queries. */
+
+    .lokir {
+        margin-top: -130px;
+    }
+
+    .ursa {
+        margin-top: -130px;
+    }
+
+    .btn {
+        width: 25%;
+    }
+
+    .btn2 {
+        width: 45%;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -433,43 +487,53 @@ ul {
         font-size: 2.5rem;
         line-height: 1.2;
     }
+
     h2, h3, .design-questions {
         font-size: 1.7rem;
         line-height: 1.2;
     }
+
     p, li, a, .next-project-footer {
         font-size: 1rem;
     }
+
     .row, h1, h2 {
         padding-bottom: 15px;
     }
+
     .hero-header {
         font-size: 2.5rem;
         max-width: 22em;
         line-height: 1.5;
     }
+
     .jumbotron {
         padding-top: 225px;
         padding-bottom: 290px;
         margin: 0;
     }
+
     .my-container-fluid {
         padding: 0;
         overflow-x: hidden;
         width: 70%;
     }
+
     .btn {
-        width: 15%;
+        width: 18%;
     }
+
     .btn2 {
         width: 20%;
         padding: 20px;
     }
+
     .ca3-scroll-down-link {
         height: 200px;
         width: 30px;
         font-size: 30px;
     }
+
 }
 
 /* Large devices (desktops, laptops 992px and up) */
@@ -480,20 +544,37 @@ ul {
         overflow-x: hidden;
         width: 90%;
     }
+
     h1, .hero-header {
         font-size: 2.5rem;
     }
+
     .me {
         margin-top: -9px;
     }
+
     .btn {
-        width: 10%;
+        width: 20%;
     }
+
     .btn2 {
-        width: 15%;
+        width: 45%;
     }
+
     p, li, .navbar-brand {
         font-size: 0.9rem;
+    }
+
+    .lokir {
+        margin-top: -120px;
+    }
+
+    .ursa {
+        margin-top: -150px;
+    }
+
+    .scourged {
+        margin-top: 100px;
     }
 }
 
@@ -504,37 +585,46 @@ ul {
         font-size: 2.5rem;
         line-height: 1.2;
     }
+
     h2, h3, .design-questions {
         font-size: 1.5rem;
         line-height: 1.5;
     }
+
     p, li, .navbar-brand {
         font-size: 1rem;
     }
+
     .row, h1, h2 {
         padding-bottom: 15px;
     }
+
     .hero-header {
         font-size: 3rem;
         max-width: 22em;
         line-height: 1.5;
     }
+
     .jumbotron {
         padding-top: 305px;
         padding-bottom: 370px;
         margin: 0;
     }
+
     .my-container-fluid {
         padding: 0;
         overflow-x: hidden;
         width: 90%;
     }
+
     .btn {
         width: 15%;
     }
+
     .btn2 {
         width: 20%;
     }
+
     .vid {
         margin-top: 0;
     }
@@ -548,10 +638,12 @@ ul {
         overflow-x: hidden;
         width: 80%;
     }
+
     .btn {
         width: 15%;
         padding: 0;
     }
+
     .btn2 {
         width: 20%;
         padding: 20px;
@@ -566,10 +658,12 @@ ul {
         overflow-x: hidden;
         width: 60%;
     }
+
     .btn {
         width: 15%;
         padding: 0;
     }
+
     .btn2 {
         width: 20%;
         padding: 20px;
