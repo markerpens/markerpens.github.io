@@ -59,6 +59,15 @@ html {
     width: 90%;
 }
 
+/*
+.jumbotron{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url('images/khajiit-vs-thoros-hero.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+    */
+
+
 /** Font Utils **/
 
 @font-face {
@@ -73,7 +82,17 @@ html {
 .hero-header {
     font-size: 1.8rem;
     line-height: 1.6;
+    color: #2db82d;
+    text-align: center;
+    margin: auto;
+}
+
+.hero-header2 {
+    font-size: 1.8rem;
+    line-height: 1.6;
     color: #E0E0E0;
+    text-align: center;
+    margin: auto;
 }
 
 h1 {
@@ -143,7 +162,10 @@ a:hover, a:focus {
 .game-links {
     color: #2db82d;
     font-family: 'Inconsolata Bold', sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    text-align:center;
+    display:block;
+    padding-top:1%;
 }
 
 .game-links:hover, .game-links:focus {
@@ -532,9 +554,13 @@ ul {
     }
 
     .hero-header {
-        font-size: 2.5rem;
+        font-size: 3.5rem;
         max-width: 22em;
         line-height: 1.5;
+    }
+
+    .hero-header2{
+        font-size: 2rem;
     }
 
     .jumbotron {
@@ -572,11 +598,23 @@ ul {
     .my-container-fluid {
         padding: 0;
         overflow-x: hidden;
-        width: 90%;
+        width: 80%;
     }
 
-    h1, .hero-header {
-        font-size: 2.5rem;
+    h1 {
+        font-size: 2.1rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .hero-header{
+        font-size: 3rem;
+    }
+
+    .hero-header2{
+        font-size: 1.8rem;
     }
 
     .me {
@@ -612,7 +650,7 @@ ul {
 
 @media (min-width: 1200px) {
     h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         line-height: 1.2;
     }
 
@@ -630,14 +668,19 @@ ul {
     }
 
     .hero-header {
-        font-size: 3rem;
+        font-size: 4rem;
         max-width: 22em;
         line-height: 1.5;
     }
 
+    .hero-header2 {
+        font-size: 2.5rem;
+    }
+
     .jumbotron {
-        padding-top: 305px;
-        padding-bottom: 370px;
+        /* Original: top padding 305, bottom 370 */
+        padding-top: 235px;
+        padding-bottom: 300px;
         margin: 0;
     }
 
@@ -666,7 +709,7 @@ ul {
     .my-container-fluid {
         padding: 0;
         overflow-x: hidden;
-        width: 80%;
+        width: 90%;
     }
 
     .btn {
