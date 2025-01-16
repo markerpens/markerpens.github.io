@@ -88,11 +88,17 @@ html {
 }
 
 .hero-header2 {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     line-height: 1.6;
     color: #E0E0E0;
     text-align: center;
     margin: auto;
+}
+
+.reflection-header {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    color: #E0E0E0;
 }
 
 h1 {
@@ -162,7 +168,7 @@ a:hover, a:focus {
 .game-links {
     color: #2db82d;
     font-family: 'Inconsolata Bold', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align:center;
     display:block;
     padding-top:1%;
@@ -554,13 +560,17 @@ ul {
     }
 
     .hero-header {
-        font-size: 3.5rem;
+        font-size: 3rem;
         max-width: 22em;
         line-height: 1.5;
     }
 
     .hero-header2{
-        font-size: 2rem;
+        font-size: 1.8rem;
+    }
+
+    .reflection-header {
+        font-size: 2.5rem;
     }
 
     .jumbotron {
@@ -588,6 +598,10 @@ ul {
         height: 200px;
         width: 30px;
         font-size: 30px;
+    }
+
+    .game-links{
+        font-size:1.5rem;
     }
 
 }
