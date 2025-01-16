@@ -14,6 +14,11 @@ img {
     opacity: 0.75;
 }
 
+.img-max {
+    max-width: 80%;
+    width:100%;
+  }
+
 /* .avatar {
     text-align: center;
 } */
@@ -273,7 +278,32 @@ ul {
     transform: translatey(200px);
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
-    padding: 25%;
+    padding: 20%;
+}
+
+.hovereffect h2.info2{
+    color: #ebebeb;
+    text-align: center;
+    position: relative;
+    -webkit-transform: translatey(200px);
+    -ms-transform: translatey(200px);
+    transform: translatey(200px);
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    padding: 16%;
+}
+
+.hovereffect h2.info3{
+    color: #ebebeb;
+    text-align: center;
+    position: relative;
+    -webkit-transform: translatey(200px);
+    -ms-transform: translatey(200px);
+    transform: translatey(200px);
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    padding-right: 30%;
+    padding-top: 15%
 }
 
 .hovereffect:hover img {
