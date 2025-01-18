@@ -200,9 +200,21 @@ a:hover, a:focus {
     border-bottom: 1px solid #929292;
 }
 
+/* copy for longer text */
 .project-copy {
+    max-width: 50em;
+}
+
+/* copy for text if you need more spacing between 2 sections */
+.project-copy2 {
     max-width: 28em;
 }
+
+/* copy for ablities to shorten padding at the end */
+.ability-copy {
+    max-width: 32em;
+}
+
 
 ul {
     list-style: none;
