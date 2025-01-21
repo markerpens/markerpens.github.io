@@ -101,6 +101,18 @@ html {
     color: #E0E0E0;
 }
 
+.lokir {
+    margin-top: -110px;
+}
+
+.ursa {
+    margin-top: -70px;
+}
+
+.morkvar{
+    margin-top: -70px;
+}
+
 h1 {
     font-size: 1.8rem;
     font-family: 'Inconsolata Bold', sans-serif;
@@ -109,6 +121,10 @@ h1 {
 h2, h3, .design-questions {
     font-size: 1.2rem;
     font-family: 'Inconsolata Bold', sans-serif;
+}
+
+.h2-hero-caption{
+    color: #696969
 }
 
 h1, h2, h6 {
@@ -267,7 +283,7 @@ ul {
     opacity: 1;
 }
 
-.textBox, .textBox-2, .textBox-3 {
+.textBox, .textBox-2, .textBox-3, .textBox-4, .textBox-5, .textBox-6 {
     display: none;
 }
 
@@ -538,7 +554,11 @@ ul {
     }
 
     .ursa {
-        margin-top: -130px;
+        margin-top: -100px;
+    }
+
+    .morkvar{
+        margin-top: -70px;
     }
 
     .btn {
