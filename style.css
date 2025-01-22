@@ -102,14 +102,18 @@ html {
 }
 
 .lokir {
-    margin-top: -110px;
+    margin-top: -50px;
 }
 
 .ursa {
-    margin-top: -70px;
+    margin-top: -20px;
 }
 
 .morkvar{
+    margin-top: -20px;
+}
+
+.hjallna{
     margin-top: -70px;
 }
 
@@ -155,6 +159,10 @@ p, li, a {
 
 .playtest-no {
     color: #696969;
+}
+
+.btn-caption{
+    font-family: 'Inconsolata Bold', sans-serif;
 }
 
 /** Navbar **/
@@ -274,6 +282,37 @@ ul {
     background-color: black;
 }
 
+/*  */
+.btn3{
+    width: 20%;
+    padding: 0;
+    opacity: 0.5;
+    transition: all 0.5s;
+    text-decoration: none;
+    border: none;
+    background: none;
+
+    /* margin:auto;
+    display: block; */
+    margin:5%; 
+}
+
+.btn3:focus, .btn3:active {
+    outline: none;
+    box-shadow: none;
+}
+
+.btn3:hover{
+    opacity:1;
+}
+
+.elementrow{
+    /* display: flex;   */
+    justify-content: center;  
+    align-items: center;  
+}
+/*  */
+
 .btn:focus, .btn:active {
     outline: none;
     box-shadow: none;
@@ -286,6 +325,19 @@ ul {
 .textBox, .textBox-2, .textBox-3, .textBox-4, .textBox-5, .textBox-6 {
     display: none;
 }
+/* 
+.halvar-section, .ursa-section, .morkvar-section, .eerika-section, .hjallna-section{
+    display: none;
+} */
+
+/* 
+.ironhand-section{
+    display:none;
+} */
+/* 
+.hidden{
+    display:none;
+} */
 
 /** Videos **/
 
@@ -568,6 +620,23 @@ ul {
     .btn2 {
         width: 45%;
     }
+
+    .lokir {
+        margin-top: -120px;
+    }
+    
+    .ursa {
+        margin-top: -50px;
+        width:35%;
+    }
+    
+    .morkvar{
+        margin-top: -50px;
+    }
+    
+    .hjallna{
+        margin-top: -160px;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -636,6 +705,28 @@ ul {
         font-size:1.5rem;
     }
 
+    .btn3{
+        width: 12%;
+        margin:2%; 
+    }
+
+    .lokir {
+        margin-top: -120px;
+    }
+    
+    .ursa {
+        margin-top: -50px;
+        width:35%;
+    }
+    
+    .morkvar{
+        margin-top: -50px;
+    }
+    
+    .hjallna{
+        margin-top: -160px;
+    }
+
 }
 
 /* Large devices (desktops, laptops 992px and up) */
@@ -680,15 +771,43 @@ ul {
     }
 
     .lokir {
-        margin-top: -120px;
+        margin-top: -170px;
+        width:55%;
+    }
+
+    .halvar {
+        margin-top: -40px;
+        width:55%;
     }
 
     .ursa {
-        margin-top: -150px;
+        margin-top: -100px;
+        width: 34%;
+        width:48%;
+    }
+
+    .morkvar{
+        width:63%;
+        margin-top: -110px;
+    }
+
+    .hjallna{
+        width:65%;
+        margin-top: -200px;
     }
 
     .scourged {
         margin-top: 100px;
+    }
+
+    .vid {
+        margin-top: 50px;
+    }
+    
+
+    .btn3{
+        width: 9%;
+        margin:2%; 
     }
 }
 
@@ -747,6 +866,37 @@ ul {
     .vid {
         margin-top: 0;
     }
+
+    .btn3{
+        width: 6.5%;
+        margin:1.2%; 
+    }
+
+    .lokir {
+        margin-top: -200px;
+        width:42%;
+    }
+
+    .halvar {
+        margin-top: -40px;
+        width:45%;
+    }
+
+    .ursa {
+        margin-top: -100px;
+        width: 34%;
+    }
+
+    .morkvar{
+        width:47%;
+        margin-top: -110px;
+    }
+
+    .hjallna{
+        width:47%;
+        margin-top: -210px;
+    }
+    
 }
 
 /* Thicc devices (thicc desktops, 1440px and up) */
@@ -767,6 +917,10 @@ ul {
         width: 20%;
         padding: 20px;
     }
+
+    .hjallna{
+        margin-top: -270px;
+    }
 }
 
 /* Thiccc devices (thicc desktops, 1920px and up) */
@@ -786,5 +940,14 @@ ul {
     .btn2 {
         width: 20%;
         padding: 20px;
+    }
+
+    .btn3{
+        width: 7%;
+        margin:1%; 
+    }
+
+    .hjallna{
+        margin-top: -210px;
     }
 }
