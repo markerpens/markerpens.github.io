@@ -807,6 +807,11 @@ ul {
         width:55%;
     }
 
+    .halvar-lotr{
+        margin-top: -60px;
+        width:55%;
+    }
+
     .ursa {
         margin-top: -100px;
         width: 34%;
@@ -912,6 +917,11 @@ ul {
     .halvar {
         margin-top: -40px;
         width:45%;
+    }
+
+    .halvar-lotr{
+        margin-top: -70px;
+        width:40%;
     }
 
     .ursa {
