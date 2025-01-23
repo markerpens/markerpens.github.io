@@ -256,6 +256,10 @@ a:hover, a:focus {
     max-width: 28em;
 }
 
+.project-copy3 {
+    max-width: 50em;
+}
+
 /* copy for ablities to shorten padding at the end */
 .ability-copy {
     max-width: 32em;
@@ -663,7 +667,6 @@ ul {
     .footer-content{
         font-size:1rem;
     }
-    
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -841,6 +844,7 @@ ul {
         width: 9%;
         margin:2%; 
     }
+    
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -963,6 +967,10 @@ ul {
     .hjallna{
         margin-top: -270px;
     }
+
+    .project-copy3 {
+        max-width: 35em;
+    }
 }
 
 /* Thiccc devices (thicc desktops, 1920px and up) */
@@ -991,5 +999,9 @@ ul {
 
     .hjallna{
         margin-top: -210px;
+    }
+
+    .project-copy3 {
+        max-width: 32em;
     }
 }
