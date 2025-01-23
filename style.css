@@ -109,6 +109,15 @@ html {
     color: #E0E0E0;
 }
 
+.project-subtitle {
+    color: #929292;
+    text-align: center;
+    margin: auto;
+    font-family: 'Inconsolata Bold', sans-serif;
+    font-size: 1.2rem;
+    width:90%;
+}
+
 .lokir {
     margin-top: -50px;
 }
@@ -148,12 +157,6 @@ h6 {
     text-align: left;
 }
 
-.project-subtitle {
-    text-align: left;
-    font-family: 'Inconsolata Bold', sans-serif;
-    font-size: 1.2rem;
-}
-
 p, li, a {
     font-size: 0.9rem;
     color: #E0E0E0;
@@ -178,6 +181,10 @@ p, li, a {
 
 .btn-caption{
     font-family: 'Inconsolata Bold', sans-serif;
+}
+
+.footer-content{
+    font-size:0.75rem;
 }
 
 /** Navbar **/
@@ -652,6 +659,11 @@ ul {
     .hjallna{
         margin-top: -160px;
     }
+
+    .footer-content{
+        font-size:1rem;
+    }
+    
 }
 
 /* Medium devices (tablets, 768px and up) */
