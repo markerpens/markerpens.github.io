@@ -211,6 +211,7 @@ a:hover, a:focus {
     outline: none;
 }
 
+/* Links */
 .game-links {
     color: #2db82d;
 
@@ -223,6 +224,12 @@ a:hover, a:focus {
     font-size: 1rem;
     display:block;
     padding-top:1%;
+}
+
+
+.project-subtitle-link {
+    font-size: 1.2rem;
+    color: #2db82d;
 }
 
 .game-links:hover, .game-links:focus {
