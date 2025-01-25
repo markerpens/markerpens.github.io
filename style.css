@@ -213,9 +213,14 @@ a:hover, a:focus {
 
 .game-links {
     color: #2db82d;
-    font-family: 'Inconsolata Bold', sans-serif;
+
+}
+
+.game-links-subtitles{
+    color: #929292;
+    text-align: center;
+    margin: auto;
     font-size: 1rem;
-    text-align:center;
     display:block;
     padding-top:1%;
 }
@@ -698,6 +703,10 @@ ul {
         height: 200px;
         width: 30px;
         font-size: 30px;
+    }
+
+    .game-links-subtitles{
+        font-size:1.5rem;
     }
 
     .game-links{
