@@ -936,7 +936,7 @@ ul {
     .my-container-fluid {
         padding: 0;
         overflow-x: hidden;
-        width: 90%;
+        width: 60%;
     }
 
     .btn {
@@ -952,9 +952,10 @@ ul {
     .hjallna{
         margin-top: -270px;
     }
+    
 
     .project-copy3 {
-        max-width: 35em;
+        max-width: 32em;
     }
 }
 
