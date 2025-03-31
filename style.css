@@ -79,6 +79,24 @@ html {
     border-bottom: 1px solid #929292;
   }
 
+  .text-container {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .jumbotron::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #00000088 60%, #ffffff44 140%);
+  }
+
+
     /* .jumbotron {
     color: #E0E0E0;
     border-bottom: 1px solid #929292;
@@ -109,7 +127,7 @@ html {
   }
 
   .btr-jb{
-    background-image: url('images/index-assets/bjorn-rage.jpg');
+    background-image: url('images/btr-assets/bjorn-rage.jpg');
   }
 
   .rotr-jb{
@@ -117,30 +135,13 @@ html {
   }
 
   .lotr-jb{
-    background-image: url('images/index-assets/forest-level-3.png');
+    background-image: url('images/lotr-assets/lotr-jumbotron.png');
   }
 
   .bh-jb{
-    background-image: url('images/bh-assets/bh-jumbotron-2.png');
+    background-image: url('images/bh-assets/bh-jumbotron-3.png');
   }
   
-  .text-container {
-    position: relative;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .jumbotron::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(0deg, #00000088 60%, #ffffff44 140%);
-  }
-
 @font-face {
     font-family: "Fira Sans Regular";
     src: url("fonts/FiraSans-Regular.ttf");
