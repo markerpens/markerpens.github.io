@@ -77,7 +77,7 @@ html {
     background-size: cover; 
     background-position: center; 
     border-bottom: 1px solid #929292;
-    background-attachment: scroll;   
+    background-attachment: fixed;   
 }
 
 /* Text Container Styles */
