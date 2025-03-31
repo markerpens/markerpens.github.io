@@ -19,9 +19,6 @@ img {
     width:100%;
   }
 
-/* .avatar {
-    text-align: center;
-} */
 
 html {
     scroll-behavior: smooth;
@@ -56,25 +53,99 @@ html {
 .my-container-fluid {
     padding: 0;
     overflow-x: hidden;
-    width: 90%;
 }
 
-/*
-.jumbotron{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url('images/khajiit-vs-thoros-hero.png');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+.row{
+    padding-left:10%;
+    padding-right:10%;
 }
-    */
 
+.hero-header2{
+    padding-left: 10%;
+    padding-right: 10%
+}
 
 /** Font Utils **/
+
+.jumbotron {
+    position: relative;
+    max-height: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-bottom: 0; /* optional, to remove the default margin bottom */
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+  }
+
+    /* .jumbotron {
+    color: #E0E0E0;
+    border-bottom: 1px solid #929292;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    margin: 0;
+
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+
+} */
+
+  .clans-jb{
+    background-image: url('images/mw5clans-assets/mw5clans-jumbotron-1.png');
+  }
+
+  .mercs-jb{
+    background-image: url('images/mw5mercs-assets/mw5mercs-jumbotron.jpeg');
+  }
+
+  .mwo-jb{
+    background-image: url('images/mwo-assets/mwo-jumbotron-1.jpg');
+  }
+
+  .index-jb{
+    background-image: url('images/index-assets/bjorn-khajiit.png');
+  }
+
+  .btr-jb{
+    background-image: url('images/index-assets/bjorn-rage.jpg');
+  }
+
+  .rotr-jb{
+    background-image: url('images/rotr-assets/rotr-jumbotron.png');
+  }
+
+  .lotr-jb{
+    background-image: url('images/index-assets/forest-level-3.png');
+  }
+
+  .bh-jb{
+    background-image: url('images/bh-assets/bh-jumbotron-2.png');
+  }
+  
+  .text-container {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .jumbotron::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #00000088 60%, #ffffff44 140%);
+  }
 
 @font-face {
     font-family: "Fira Sans Regular";
     src: url("fonts/FiraSans-Regular.ttf");
     font-family: "Inconsolata Bold";
     src: url("fonts/Inconsolata-Bold.ttf");
+    -webkit-text-stroke: 3px black;
 }
 
 /* Mobile First!!! */
@@ -162,15 +233,6 @@ p, li, a {
     color: #E0E0E0;
 }
 
-.jumbotron {
-    background-color: #111111;
-    color: #E0E0E0;
-    border-bottom: 1px solid #929292;
-    padding-top: 100px;
-    padding-bottom: 80px;
-    margin: 0;
-}
-
 .contributions-row {
     border-bottom: 1px solid #929292;
 }
@@ -191,11 +253,17 @@ p, li, a {
 
 nav {
     border-bottom: 1px solid #929292;
+    
 }
 
 nav a, .navbar-brand {
     color: #32CD32;
     font-family: 'Inconsolata Bold', sans-serif;
+}
+
+.navbar-brand, .navbar-nav{
+    padding-left:10%;
+    padding-right:10%;
 }
 
 a:hover, a:focus {
@@ -214,7 +282,6 @@ a:hover, a:focus {
 /* Links */
 .game-links {
     color: #2db82d;
-
 }
 
 .game-links-subtitles{
@@ -224,6 +291,7 @@ a:hover, a:focus {
     font-size: 1rem;
     display:block;
     padding-top:1%;
+    max-width: 80%;
 }
 
 
@@ -250,9 +318,10 @@ a:hover, a:focus {
 
 /** Content **/
 
-.row {
-    padding: 0;
-}
+/* .row{
+    padding-left: 100px;
+    padding-right: 100px;
+} */
 
 .my-row {
     border-bottom: 1px solid #929292;
@@ -260,21 +329,25 @@ a:hover, a:focus {
 
 /* copy for longer text */
 .project-copy {
-    max-width: 50em;
+    /* max-width: 50em; */
+    max-width: 62em;
 }
 
 /* copy for text if you need more spacing between 2 sections */
 .project-copy2 {
-    max-width: 28em;
+    /* max-width: 28em; */
+    max-width: 40em;
 }
 
 .project-copy3 {
-    max-width: 50em;
+    /* max-width: 50em; */
+    max-width: 62em;
 }
 
 /* copy for ablities to shorten padding at the end */
 .ability-copy {
-    max-width: 32em;
+    /* max-width: 32em; */
+    max-width: 50em;
 }
 
 
@@ -293,6 +366,8 @@ ul {
 .footer {
     color: #E0E0E0;
     background-color: #111111;
+    padding-left:10%;
+    padding-right:10%;
 }
 
 .next-project-footer, .footer-content {
@@ -608,6 +683,10 @@ ul {
 @media (min-width: 576px) {
     /* By default, bootstrap is a mobile first framework (0px). Thus, everything will be applied to mobile unless specified by queries. */
 
+    .jumbotron{
+        height: 50vh;
+    }
+
     .lokir {
         margin-top: -130px;
     }
@@ -653,6 +732,11 @@ ul {
 /* Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
+
+    .jumbotron{
+        height: 100vh;
+    }
+
     h1 {
         font-size: 2.1rem;
         line-height: 1.2;
@@ -672,7 +756,7 @@ ul {
     }
 
     .hero-header, .hero-header3 {
-        font-size: 3rem;
+        font-size: 2.7rem;
         max-width: 22em;
         line-height: 1.5;
     }
@@ -694,7 +778,7 @@ ul {
     .my-container-fluid {
         padding: 0;
         overflow-x: hidden;
-        width: 70%;
+
     }
 
     .btn {
@@ -750,7 +834,7 @@ ul {
     .my-container-fluid {
         padding: 0;
         overflow-x: hidden;
-        width: 80%;
+ 
     }
 
     h1 {
@@ -878,7 +962,7 @@ ul {
     .my-container-fluid {
         padding: 0;
         overflow-x: hidden;
-        width: 90%;
+
     }
 
     .btn {
@@ -936,7 +1020,7 @@ ul {
     .my-container-fluid {
         padding: 0;
         overflow-x: hidden;
-        width: 60%;
+
     }
 
     .btn {
@@ -965,7 +1049,7 @@ ul {
     .my-container-fluid {
         padding: 0;
         overflow-x: hidden;
-        width: 60%;
+
     }
 
     .btn {
@@ -987,7 +1071,15 @@ ul {
         margin-top: -210px;
     }
 
+    .project-copy {
+        max-width: 40em;
+    }
+
     .project-copy3 {
-        max-width: 32em;
+        max-width: 40em;
+    }
+
+    .project-copy4 {
+        max-width: 60em;
     }
 }
