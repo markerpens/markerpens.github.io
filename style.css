@@ -67,6 +67,7 @@ html {
 
 /** Font Utils **/
 
+/* General Jumbotron Styles */
 .jumbotron {
     position: relative;
     max-height: 100%;
@@ -75,60 +76,62 @@ html {
     margin-bottom: 0; /* optional, to remove the default margin bottom */
     background-size: cover; 
     background-position: center; 
-    background-attachment: fixed;
     border-bottom: 1px solid #929292;
-  }
+    background-attachment: scroll; /* Default value for better performance */
+}
 
-  .text-container {
+/* Text Container Styles */
+.text-container {
     position: relative;
     display: block;
     margin-left: auto;
     margin-right: auto;
-  }
-  
-  .jumbotron::before {
+}
+
+/* Simplified ::before pseudo-element */
+.jumbotron::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(0deg, #00000088 60%, #ffffff44 140%);
-  }
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.53) 60%, rgba(255, 255, 255, 0.27) 140%);
+    /* Slightly optimized gradient with rgba for better performance */
+}
 
-
-  .clans-jb{
+/* Background Image Classes - Ensure images are optimized */
+.clans-jb {
     background-image: url('images/mw5clans-assets/mw5clans-jumbotron-1.png');
-  }
+}
 
-  .mercs-jb{
+.mercs-jb {
     background-image: url('images/mw5mercs-assets/mw5mercs-jumbotron.jpeg');
-  }
+}
 
-  .mwo-jb{
+.mwo-jb {
     background-image: url('images/mwo-assets/mwo-jumbotron-1.jpg');
-  }
+}
 
-  .index-jb{
+.index-jb {
     background-image: url('images/index-assets/bjorn-khajiit.png');
-  }
+}
 
-  .btr-jb{
+.btr-jb {
     background-image: url('images/btr-assets/bjorn-rage.jpg');
-  }
+}
 
-  .rotr-jb{
+.rotr-jb {
     background-image: url('images/rotr-assets/rotr-jumbotron.png');
-  }
+}
 
-  .lotr-jb{
+.lotr-jb {
     background-image: url('images/lotr-assets/lotr-jumbotron.png');
-  }
+}
 
-  .bh-jb{
+.bh-jb {
     background-image: url('images/bh-assets/bh-jumbotron-3.png');
-  }
-  
+}
 @font-face {
     font-family: "Fira Sans Regular";
     src: url("fonts/FiraSans-Regular.ttf");
@@ -702,6 +705,7 @@ ul {
 
     .jumbotron{
         height: 100vh;
+        background-attachment: fixed;
     }
 
     h1 {
@@ -793,6 +797,13 @@ ul {
         margin-top: -160px;
     }
 
+}
+
+/* Responsive Media Queries for background images (Optional for performance) */
+@media (max-width: 768px) {
+    .jumbotron {
+        background-size: cover;
+    }
 }
 
 /* Large devices (desktops, laptops 992px and up) */
