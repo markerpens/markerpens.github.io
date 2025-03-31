@@ -97,19 +97,6 @@ html {
   }
 
 
-    /* .jumbotron {
-    color: #E0E0E0;
-    border-bottom: 1px solid #929292;
-    padding-top: 100px;
-    padding-bottom: 80px;
-    margin: 0;
-
-    background-size: cover; 
-    background-position: center; 
-    background-attachment: fixed; 
-
-} */
-
   .clans-jb{
     background-image: url('images/mw5clans-assets/mw5clans-jumbotron-1.png');
   }
@@ -314,17 +301,6 @@ a:hover, a:focus {
     color: #196619;
 }
 
-/* b {
-    color: #2db82d;
-} */
-
-/** Content **/
-
-/* .row{
-    padding-left: 100px;
-    padding-right: 100px;
-} */
-
 .my-row {
     border-bottom: 1px solid #929292;
 }
@@ -440,25 +416,14 @@ ul {
 .textBox, .textBox-2, .textBox-3, .textBox-4, .textBox-5, .textBox-6 {
     display: none;
 }
-/* 
-.halvar-section, .ursa-section, .morkvar-section, .eerika-section, .hjallna-section{
-    display: none;
-} */
 
-/* 
-.ironhand-section{
-    display:none;
-} */
-/* 
-.hidden{
-    display:none;
-} */
 
 /** Videos **/
 
 .vid {
     margin-top: -50px;
 }
+
 
 /** Hover Effect Index Html **/
 
@@ -536,6 +501,7 @@ ul {
     animation: ca3_fade_move_up 2s ease-in-out infinite;
 }
 
+
 /* Scroll down button */
 
 [data-ca3_icon]::before {
@@ -575,7 +541,6 @@ ul {
     margin-top: -30px;
     width: 50%;
 }
-
 
 
 /* Animated scroll arrow animation down */
