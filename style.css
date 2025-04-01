@@ -48,17 +48,19 @@ html {
     overflow-x: hidden;
 }
 
-/* Initially hide the content */
+/* Page content fade-in effect */
 .content {
-    visibility: hidden; /* Make content hidden initially */
-    opacity: 0; /* Fully transparent */
-    transition: opacity 1s ease; /* Smooth fade-in effect */
+    visibility: hidden;
+    opacity: 0;
+    filter: blur(5px) brightness(1.2);
+    transition: opacity 1.5s ease-out, filter 1.5s ease-out, box-shadow 1.5s ease-out;
 }
 
-/* When the content is ready to be visible */
 .content.show {
-    visibility: visible; /* Make content visible */
-    opacity: 1; /* Fade in */
+    visibility: visible;
+    opacity: 1;
+    filter: blur(0px) brightness(1);
+    box-shadow: 0px 0px 20px rgba(45, 184, 45, 0.7);
 }
 
 /** Font Utils **/
