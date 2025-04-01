@@ -48,6 +48,20 @@ html {
     overflow-x: hidden;
 }
 
+/* styles.css */
+/* Content Fade-In & Slide-In Effect */
+.content {
+    opacity: 0;
+    transform: translateY(30px);  /* Initially position the content below */
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+.content.show {
+    opacity: 1;
+    transform: translateY(0);  /* Slide up to its normal position */
+}
+
+
 /** Font Utils **/
 @font-face {
     font-family: "Fira Sans Regular";
@@ -87,7 +101,7 @@ html {
 /* Mobile First!!! */
 
 /* Font Utils */
-h1, h2, h3, .design-questions, .btn-caption, nav a, .navbar-brand, .next-project-footer, .footer-content{
+h1, h2, h3, .design-questions, .btn-caption, nav a, .navbar-brand, .next-project-footer, .footer-content, .progress-text{
     font-family: 'Inconsolata Bold', sans-serif;
 }
 
