@@ -221,6 +221,10 @@ ul {
     max-width: 40em;
 }
 
+.project-copy4{
+    max-width:80em
+}
+
 .ability-copy {
     max-width: 50em;
 }
@@ -323,7 +327,12 @@ ul {
 
 /* Thiccc devices (thicc desktops, 1920px and up) */
 @media (min-width: 1920px) {
-    .my-container-fluid{padding:0;overflow-x:hidden}.jumbotron{max-height:100vh}.btn{width:12%;padding:0}.btn2{width:20%;padding:20px}.btn3{width:7%;margin:1%}.hjallna{margin-top:-210px}.project-copy,.project-copy3{max-width:40em}.project-copy4{max-width:60em}
+    .my-container-fluid{padding:0;overflow-x:hidden}.jumbotron{max-height:100vh}.btn{width:12%;padding:0}.btn2{width:20%;padding:20px}.btn3{width:7%;margin:1%}.hjallna{margin-top:-210px}.project-copy,.project-copy3{max-width:40em}
+}
+
+/* Thiccc devices (thicc desktops, 2560px and up) */
+@media (min-width: 2560px) {
+    .project-copy4{max-width:100em}
 }
 
 /* Portrait Mode Specific Styles (vertical screens) */
