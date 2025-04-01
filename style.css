@@ -1,5 +1,4 @@
 /** Body **/
-
 body {
     color: #2db82d;
     /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;*/
@@ -19,66 +18,63 @@ img {
     width:100%;
   }
 
-
 html {
     scroll-behavior: smooth;
 }
 
 /* width */
-
 ::-webkit-scrollbar {
     width: 5px;
 }
 
 /* Track */
-
 ::-webkit-scrollbar-track {
     background: #111111;
 }
 
 /* Handle */
-
 ::-webkit-scrollbar-thumb {
     background: #2db82d;
 }
 
 /* Handle on hover */
-
 ::-webkit-scrollbar-thumb:hover {
     background: #196619;
 }
 
 /** Container **/
-
 .my-container-fluid {
     padding: 0;
     overflow-x: hidden;
 }
 
-.row{
-    padding-left:10%;
-    padding-right:10%;
-}
-
-.hero-header2{
-    padding-left: 10%;
-    padding-right: 10%
-}
-
 /** Font Utils **/
+@font-face {
+    font-family: "Fira Sans Regular";
+    src: url("fonts/FiraSans-Regular.ttf");
+    font-family: "Inconsolata Bold";
+    src: url("fonts/Inconsolata-Bold.ttf");
+    -webkit-text-stroke: 3px black;
+}
 
 /* General Jumbotron Styles */
-.jumbotron {
-    position: relative;
-    max-height: 100%;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    margin-bottom: 0; /* optional, to remove the default margin bottom */
-    background-size: cover; 
-    background-position: center; 
-    border-bottom: 1px solid #929292;
-    background-attachment: fixed;   
+.jumbotron{
+    position:relative;max-height:100%;padding-top:10vh;padding-bottom:10vh;margin-bottom:0;background-size:cover;background-position:center;border-bottom:1px solid #929292;background-attachment:fixed
 }
+
+.jumbotron::before{
+    content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(0deg,rgba(0,0,0,.53) 60%,rgba(255,255,255,.27) 140%)
+}
+
+/* Jumbotron images */
+.clans-jb{background-image: url('images/mw5clans-assets/mw5clans-jumbotron-1.png');}
+.mercs-jb{background-image: url('images/mw5mercs-assets/mw5mercs-jumbotron.jpeg');}
+.mwo-jb{background-image: url('images/mwo-assets/mwo-jumbotron-1.jpg');}
+.index-jb{background-image: url('images/index-assets/bjorn-khajiit.png');}
+.btr-jb{background-image: url('images/btr-assets/bjorn-rage.jpg');}
+.rotr-jb {background-image: url('images/rotr-assets/rotr-jumbotron.png');}
+.lotr-jb {background-image: url('images/lotr-assets/lotr-jumbotron.png');}
+.bh-jb {background-image: url('images/bh-assets/bh-jumbotron-3.png');}
 
 /* Text Container Styles */
 .text-container {
@@ -88,446 +84,95 @@ html {
     margin-right: auto;
 }
 
-/* Simplified ::before pseudo-element */
-.jumbotron::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.53) 60%, rgba(255, 255, 255, 0.27) 140%);
-    /* Slightly optimized gradient with rgba for better performance */
-}
-
-/* Background Image Classes - Ensure images are optimized */
-.clans-jb {
-    background-image: url('images/mw5clans-assets/mw5clans-jumbotron-1.png');
-}
-
-.mercs-jb {
-    background-image: url('images/mw5mercs-assets/mw5mercs-jumbotron.jpeg');
-}
-
-.mwo-jb {
-    background-image: url('images/mwo-assets/mwo-jumbotron-1.jpg');
-}
-
-.index-jb {
-    background-image: url('images/index-assets/bjorn-khajiit.png');
-}
-
-.btr-jb {
-    background-image: url('images/btr-assets/bjorn-rage.jpg');
-}
-
-.rotr-jb {
-    background-image: url('images/rotr-assets/rotr-jumbotron.png');
-}
-
-.lotr-jb {
-    background-image: url('images/lotr-assets/lotr-jumbotron.png');
-}
-
-.bh-jb {
-    background-image: url('images/bh-assets/bh-jumbotron-3.png');
-}
-@font-face {
-    font-family: "Fira Sans Regular";
-    src: url("fonts/FiraSans-Regular.ttf");
-    font-family: "Inconsolata Bold";
-    src: url("fonts/Inconsolata-Bold.ttf");
-    -webkit-text-stroke: 3px black;
-}
-
 /* Mobile First!!! */
 
-.hero-header {
-    font-size: 1.8rem;
-    line-height: 1.6;
-    color: #2db82d;
-    text-align: center;
-    margin: auto;
-}
-
-.hero-header2 {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    color: #E0E0E0;
-    text-align: center;
-    margin: auto;
-}
-
-.hero-header3 {
-    font-size: 1.8rem;
-    line-height: 1.6;
-    color: #E0E0E0;
-    text-align: center;
-    margin: auto;
-}
-
-.reflection-header {
-    font-size: 1.8rem;
-    line-height: 1.6;
-    color: #E0E0E0;
-}
-
-.project-subtitle {
-    color: #929292;
-    text-align: center;
-    margin: auto;
-    font-family: 'Inconsolata Bold', sans-serif;
-    font-size: 1.2rem;
-    width:90%;
-}
-
-.lokir {
-    margin-top: -50px;
-}
-
-.ursa {
-    margin-top: -20px;
-}
-
-.morkvar{
-    margin-top: -20px;
-}
-
-.hjallna{
-    margin-top: -70px;
-}
-
-h1 {
-    font-size: 1.8rem;
+/* Font Utils */
+h1, h2, h3, .design-questions, .btn-caption, nav a, .navbar-brand, .next-project-footer, .footer-content{
     font-family: 'Inconsolata Bold', sans-serif;
 }
 
-h2, h3, .design-questions {
+/* Font Sizes */
+h1, .hero-header, .hero-header3, .reflection-header{
+    font-size: 1.8rem;
+}
+
+h2, h3, .design-questions, .hero-header2, .project-subtitle, .project-subtitle-link {
     font-size: 1.2rem;
-    font-family: 'Inconsolata Bold', sans-serif;
 }
 
-.h2-hero-caption{
-    color: #696969
-}
-
-h1, h2, h6 {
-    line-height: 1.6;
-}
-
-h6 {
-    color: #696969;
-    text-align: left;
-}
-
-p, li, a {
+p, li, a, .desc {
     font-size: 0.9rem;
-    color: #E0E0E0;
-}
-
-.contributions-row {
-    border-bottom: 1px solid #929292;
 }
 
 .playtest-no {
-    color: #696969;
     font-size: 2.8rem;
-}
-
-.btn-caption{
-    font-family: 'Inconsolata Bold', sans-serif;
 }
 
 .footer-content{
     font-size:0.75rem;
 }
 
-/** Navbar **/
-
-nav {
-    border-bottom: 1px solid #929292;
-    
+.game-links-subtitles{
+    font-size: 1rem;
+    display:block;
 }
 
-nav a, .navbar-brand {
-    color: #32CD32;
-    font-family: 'Inconsolata Bold', sans-serif;
+/* Line heights, margins, alingments */
+h1, h2, h6, .hero-header, .hero-header2, .hero-header3 {
+    line-height: 1.6;
 }
 
-.navbar-brand, .navbar-nav{
-    padding-left:10%;
-    padding-right:10%;
+.hero-header, .hero-header2, .hero-header3, .project-subtitle, .game-links-subtitles {
+    text-align: center;
+    margin: auto;
 }
 
-a:hover, a:focus {
+/* Colors */
+.hero-header, nav a, .navbar-brand, .game-links, .project-subtitle-link, .sfu-link {
+    color: #2db82d;
+}
+
+a:hover, a:focus, .game-links:hover, .game-links:focus, .sfu-link:hover, .sfu-link:focus, .figma-link:hover, .figma-link:focus {
     color: #196619;
     text-decoration: none;
 }
 
-.nav-item {
-    padding: 0;
+.hero-header2, .hero-header3, .reflection-header, p, li, a, .footer, .next-project-footer, .footer-content {
+    color: #E0E0E0;
 }
 
-#dropdown-button {
-    outline: none;
+h6, .h2-hero-caption, .playtest-no {
+    color: #696969;
 }
 
-/* Links */
-.game-links {
-    color: #2db82d;
-}
-
-.game-links-subtitles{
+.project-subtitle, .game-links-subtitles {
+    width:90%;
     color: #929292;
-    text-align: center;
-    margin: auto;
-    font-size: 1rem;
-    display:block;
-    padding-top:1%;
-    max-width: 80%;
 }
 
-
-.project-subtitle-link {
-    font-size: 1.2rem;
-    color: #2db82d;
-}
-
-.game-links:hover, .game-links:focus {
-    color: #196619;
-}
-
-.sfu-link {
-    color: #2db82d;
-}
-
-.sfu-link:hover, .sfu-link:focus {
-    color: #196619;
-}
-
-.my-row {
+.contributions-row, nav, .my-row {
     border-bottom: 1px solid #929292;
 }
 
-/* copy for longer text */
-.project-copy {
-    /* max-width: 50em; */
-    max-width: 62em;
+/* Ironhand image margins */
+.lokir{margin-top: -50px;}
+.ursa{margin-top: -20px;}
+.morkvar{margin-top: -20px;}
+.hjallna{margin-top: -70px;}
+
+/* Paddings, margins, etc */
+.row, .hero-header2, .navbar-brand, .navbar-nav, .footer{
+    padding-left:10%;
+    padding-right:10%;
 }
 
-/* copy for text if you need more spacing between 2 sections */
-.project-copy2 {
-    /* max-width: 28em; */
-    max-width: 40em;
+.nav-item, ul {
+    padding: 0;
 }
-
-.project-copy3 {
-    /* max-width: 50em; */
-    max-width: 62em;
-}
-
-/* copy for ablities to shorten padding at the end */
-.ability-copy {
-    /* max-width: 32em; */
-    max-width: 50em;
-}
-
 
 ul {
     list-style: none;
     margin: 0;
-    padding: 0;
-}
-
-.desc {
-    font-size: 0.8rem;
-}
-
-/** Footer **/
-
-.footer {
-    color: #E0E0E0;
-    background-color: #111111;
-    padding-left:10%;
-    padding-right:10%;
-}
-
-.next-project-footer, .footer-content {
-    color: #E0E0E0;
-    font-family: 'Inconsolata Bold', sans-serif;
-}
-
-.figma-link:hover, .figma-link:focus {
-    color: #196619;
-}
-
-/** Buttons **/
-
-.btn {
-    width: 15%;
-    padding: 0;
-    opacity: 0.5;
-    transition: all 0.5s;
-    text-decoration: none;
-}
-
-.btn2 {
-    width: 20%;
-    padding: 0;
-    background-color: black;
-}
-
-/*  */
-.btn3{
-    width: 20%;
-    padding: 0;
-    opacity: 0.5;
-    transition: all 0.5s;
-    text-decoration: none;
-    border: none;
-    background: none;
-
-    /* margin:auto;
-    display: block; */
-    margin:5%; 
-}
-
-.btn3:focus, .btn3:active {
-    outline: none;
-    box-shadow: none;
-}
-
-.btn3:hover{
-    opacity:1;
-}
-
-.elementrow{
-    /* display: flex;   */
-    justify-content: center;  
-    align-items: center;  
-}
-/*  */
-
-.btn:focus, .btn:active {
-    outline: none;
-    box-shadow: none;
-}
-
-.btn:hover, .btn2:hover, .active {
-    opacity: 1;
-}
-
-.textBox, .textBox-2, .textBox-3, .textBox-4, .textBox-5, .textBox-6 {
-    display: none;
-}
-
-
-/** Videos **/
-
-.vid {
-    margin-top: -50px;
-}
-
-
-/** Hover Effect Index Html **/
-
-.img-wrapper{
-    position: relative;
-    overflow: hidden;
-}
-
-.img-wrapper > .index-img {
-    display: block;
-    object-fit: cover;
-    object-position: center;
-    width:100%;
-}
-
-.img-wrapper > .content {
-    position: absolute;
-    inset: 0;
-    color: #ebebeb;
-    text-align: center;
-    background: rgba(17, 17, 17, 0.4);
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.img-wrapper > .index-img,
-.img-wrapper > .content{
-    transition: 200ms ease-in-out;
-}
-
-.img-wrapper:hover > .index-img.blur {
-    filter: blur(3px);
-}
-
-
-.img-wrapper:hover > .index-img.zoom {
-    transform: scale(1.1);
-}
-
-.img-wrapper > .content.fade{
-    opacity: 0;
-}
-
-.img-wrapper:hover > .content.fade 
-{
-    opacity: 1;
-}
-
-.img-wrapper > .content.slide-up {
-    transform: translateY(100%);
-}
-
-.img-wrapper:hover > .content.slide-up {
-    transform: translateY(0);
-}
-
-
-/* Scroll up button */
-
-#back-to-top {
-    position: fixed;
-    right: 25px;
-    bottom: 15px;
-    display: none;
-    color: #32CD32;
-    padding: 0;
-    border: none;
-    background: none;
-    font-size: 30px;
-    outline: none;
-    -webkit-animation: ca3_fade_move_up 2s ease-in-out infinite;
-    -moz-animation: ca3_fade_move_up 2s ease-in-out infinite;
-    animation: ca3_fade_move_up 2s ease-in-out infinite;
-}
-
-
-/* Scroll down button */
-
-[data-ca3_icon]::before {
-    font-weight: normal;
-    content: attr(data-ca3_icon);
-}
-
-.ca3-scroll-down-link {
-    height: 75px;
-    width: 20px;
-    padding: 0;
-    border: none;
-    background: none;
-    position: absolute;
-    left: 49%;
-    bottom: 0px;
-    color: #32CD32;
-    text-align: center;
-    font-size: 30px;
-    -webkit-animation: ca3_fade_move_down 2s ease-in-out infinite;
-    -moz-animation: ca3_fade_move_down 2s ease-in-out infinite;
-    animation: ca3_fade_move_down 2s ease-in-out infinite;
 }
 
 .speakers {
@@ -546,543 +191,130 @@ ul {
     width: 50%;
 }
 
+/* Text widths */
+.project-copy, .project-copy3 {
+    max-width: 62em;
+}
+
+.project-copy2 {
+    max-width: 40em;
+}
+
+.ability-copy {
+    max-width: 50em;
+}
+
+/** Footer BG color **/
+.footer {
+    background-color: #111111;
+}
+
+/** Buttons **/
+.btn, .btn2, .btn3{
+    padding: 0;
+    opacity: 0.5;
+    transition: all 0.5s;
+    text-decoration: none;
+}
+
+.btn {
+    width: 15%;
+}
+
+.btn2 {
+    width: 20%;
+    background-color: black;
+}
+
+.btn3{
+    width: 20%;
+    border: none;
+    background: none;
+    margin:5%; 
+}
+
+.btn3:focus, .btn3:active, .btn:focus, .btn:active {
+    outline: none;
+    box-shadow: none;
+}
+
+.elementrow{
+    justify-content: center;  
+    align-items: center;  
+}
+
+.btn:hover, .btn2:hover, .btn3:hover, .active {
+    opacity: 1;
+}
+
+.textBox, .textBox-2, .textBox-3, .textBox-4, .textBox-5, .textBox-6 {
+    display: none;
+}
+
+/** Videos **/
+.vid {
+    margin-top: -50px;
+}
+
+/** Hover Effect Index Html **/
+.img-wrapper{position:relative;overflow:hidden}.img-wrapper>.index-img{display:block;object-fit:cover;object-position:center;width:100%}.img-wrapper>.content{position:absolute;inset:0;color:#ebebeb;text-align:center;background:rgba(17,17,17,.4);margin:auto;display:flex;justify-content:center;align-items:center}.img-wrapper>.content,.img-wrapper>.index-img{transition:.2s ease-in-out}.img-wrapper:hover>.index-img.blur{filter:blur(3px)}.img-wrapper:hover>.index-img.zoom{transform:scale(1.1)}.img-wrapper>.content.fade{opacity:0}.img-wrapper:hover>.content.fade{opacity:1}.img-wrapper>.content.slide-up{transform:translateY(100%)}.img-wrapper:hover>.content.slide-up{transform:translateY(0)}
+
+/* Scroll up button */
+#back-to-top{position:fixed;right:25px;bottom:15px;display:none;color:#32cd32;padding:0;border:none;background:0 0;font-size:30px;outline:0;-webkit-animation:2s ease-in-out infinite ca3_fade_move_up;-moz-animation:2s ease-in-out infinite ca3_fade_move_up;animation:2s ease-in-out infinite ca3_fade_move_up}
+
+
+/* Scroll down button */
+[data-ca3_icon]::before{font-weight:400;content:attr(data-ca3_icon)}.ca3-scroll-down-link{height:75px;width:20px;padding:0;border:none;background:0 0;position:absolute;left:49%;bottom:0;color:#32cd32;text-align:center;font-size:30px;-webkit-animation:2s ease-in-out infinite ca3_fade_move_down;-moz-animation:2s ease-in-out infinite ca3_fade_move_down;animation:2s ease-in-out infinite ca3_fade_move_down}
 
 /* Animated scroll arrow animation down */
-
-@-webkit-keyframes ca3_fade_move_down {
-    0% {
-        -webkit-transform: translate(0, -10px);
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    100% {
-        -webkit-transform: translate(0, 10px);
-        opacity: 0;
-    }
-}
-
-@-moz-keyframes ca3_fade_move_down {
-    0% {
-        -moz-transform: translate(0, -10px);
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    100% {
-        -moz-transform: translate(0, 10px);
-        opacity: 0;
-    }
-}
-
-@keyframes ca3_fade_move_down {
-    0% {
-        transform: translate(0, -10px);
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    100% {
-        transform: translate(0, 10px);
-        opacity: 0;
-    }
-}
+@-webkit-keyframes ca3_fade_move_down{0%{-webkit-transform:translate(0,-10px);opacity:0}50%{opacity:1}100%{-webkit-transform:translate(0,10px);opacity:0}}@-moz-keyframes ca3_fade_move_down{0%{-moz-transform:translate(0,-10px);opacity:0}50%{opacity:1}100%{-moz-transform:translate(0,10px);opacity:0}}@keyframes ca3_fade_move_down{0%{transform:translate(0,-10px);opacity:0}50%{opacity:1}100%{transform:translate(0,10px);opacity:0}}
 
 /* Animated scroll arrow animation up */
-
-@-webkit-keyframes ca3_fade_move_up {
-    0% {
-        -webkit-transform: translate(0, 10px);
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    100% {
-        -webkit-transform: translate(0, -10px);
-        opacity: 0;
-    }
-}
-
-@-moz-keyframes ca3_fade_move_up {
-    0% {
-        -moz-transform: translate(0, 10px);
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    100% {
-        -moz-transform: translate(0, -10px);
-        opacity: 0;
-    }
-}
-
-@keyframes ca3_fade_move_up {
-    0% {
-        transform: translate(0, 10px);
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    100% {
-        transform: translate(0, -10px);
-        opacity: 0;
-    }
-}
+@-webkit-keyframes ca3_fade_move_up{0%{-webkit-transform:translate(0,10px);opacity:0}50%{opacity:1}100%{-webkit-transform:translate(0,-10px);opacity:0}}@-moz-keyframes ca3_fade_move_up{0%{-moz-transform:translate(0,10px);opacity:0}50%{opacity:1}100%{-moz-transform:translate(0,-10px);opacity:0}}@keyframes ca3_fade_move_up{0%{transform:translate(0,10px);opacity:0}50%{opacity:1}100%{transform:translate(0,-10px);opacity:0}}
 
 /** Media Queries **/
 
 /* Small devices (landscape phones, 576px and up) */
-
 @media (min-width: 576px) {
-    /* By default, bootstrap is a mobile first framework (0px). Thus, everything will be applied to mobile unless specified by queries. */
-
-    .jumbotron{
-        height: 50vh;
-    }
-
-    .lokir {
-        margin-top: -130px;
-    }
-
-    .ursa {
-        margin-top: -100px;
-    }
-
-    .morkvar{
-        margin-top: -70px;
-    }
-
-    .btn {
-        width: 25%;
-    }
-
-    .btn2 {
-        width: 45%;
-    }
-
-    .lokir {
-        margin-top: -120px;
-    }
-    
-    .ursa {
-        margin-top: -50px;
-        width:35%;
-    }
-    
-    .morkvar{
-        margin-top: -50px;
-    }
-    
-    .hjallna{
-        margin-top: -160px;
-    }
-
-    .footer-content{
-        font-size:1rem;
-    }
-
-    .playtest-no{
-        font-size: 3.3rem;
-    }
+    .jumbotron{height:50vh}.btn{width:25%}.btn2{width:45%}.lokir{margin-top:-120px}.morkvar,.ursa{margin-top:-50px}.ursa{width:35%}.hjallna{margin-top:-160px}.footer-content{font-size:1rem}.playtest-no{font-size:3.3rem}
 }
 
 /* Medium devices (tablets, 768px and up) */
-
 @media (min-width: 768px) {
-
-    .jumbotron{
-        height: 100vh;
-    }
-
-    h1 {
-        font-size: 2.1rem;
-        line-height: 1.2;
-    }
-
-    h2, h3, .design-questions {
-        font-size: 1.7rem;
-        line-height: 1.2;
-    }
-
-    p, li, a, .next-project-footer {
-        font-size: 1rem;
-    }
-
-    .row, h1, h2 {
-        padding-bottom: 15px;
-    }
-
-    .hero-header, .hero-header3 {
-        font-size: 2.7rem;
-        max-width: 22em;
-        line-height: 1.5;
-    }
-
-    .hero-header2{
-        font-size: 1.8rem;
-    }
-
-    .reflection-header {
-        font-size: 2.5rem;
-    }
-
-    .jumbotron {
-        padding-top: 225px;
-        padding-bottom: 290px;
-        margin: 0;
-    }
-
-    .my-container-fluid {
-        padding: 0;
-        overflow-x: hidden;
-
-    }
-
-    .btn {
-        width: 15%;
-    }
-
-    .btn2 {
-        width: 20%;
-        padding: 20px;
-    }
-
-    .ca3-scroll-down-link {
-        height: 200px;
-        width: 30px;
-        font-size: 30px;
-    }
-
-    .game-links-subtitles{
-        font-size:1.5rem;
-    }
-
-    .game-links{
-        font-size:1.5rem;
-    }
-
-    .btn3{
-        width: 12%;
-        margin:2%; 
-    }
-
-    .lokir {
-        margin-top: -120px;
-    }
-    
-    .ursa {
-        margin-top: -50px;
-        width:35%;
-    }
-    
-    .morkvar{
-        margin-top: -50px;
-    }
-    
-    .hjallna{
-        margin-top: -160px;
-    }
-
+    h1{font-size:2.1rem;line-height:1.2}.design-questions,h2,h3{font-size:1.7rem;line-height:1.2}.next-project-footer,a,li,p{font-size:1rem}.row,h1,h2{padding-bottom:15px}.hero-header,.hero-header3{font-size:2.7rem;max-width:22em;line-height:1.5}.hero-header2{font-size:1.8rem}.reflection-header{font-size:2.5rem}.jumbotron{height:100vh;padding-top:225px;padding-bottom:290px;margin:0}.my-container-fluid{padding:0;overflow-x:hidden}.btn{width:15%}.btn2{width:20%;padding:20px}.ca3-scroll-down-link{height:200px;width:30px;font-size:30px}.game-links,.game-links-subtitles{font-size:1.5rem}.btn3{width:12%;margin:2%}.lokir{margin-top:-120px}.morkvar,.ursa{margin-top:-50px}.ursa{width:35%}.hjallna{margin-top:-160px}
 }
 
 /* Large devices (desktops, laptops 992px and up) */
-
 @media (min-width: 992px) {
-    .my-container-fluid {
-        padding: 0;
-        overflow-x: hidden;
- 
-    }
-
-    h1 {
-        font-size: 2.1rem;
-    }
-
-    h2 {
-        font-size: 1.2rem;
-    }
-
-    .hero-header, .hero-header3{
-        font-size: 3rem;
-    }
-
-    .hero-header2{
-        font-size: 1.8rem;
-    }
-
-    .me {
-        margin-top: -9px;
-    }
-
-    .btn {
-        width: 20%;
-    }
-
-    .btn2 {
-        width: 45%;
-    }
-
-    p, li, .navbar-brand {
-        font-size: 0.9rem;
-    }
-
-    .lokir {
-        margin-top: -170px;
-        width:55%;
-    }
-
-    .halvar {
-        margin-top: -40px;
-        width:55%;
-    }
-
-    .halvar-lotr{
-        margin-top: -60px;
-        width:55%;
-    }
-
-    .ursa {
-        margin-top: -100px;
-        width: 34%;
-        width:48%;
-    }
-
-    .morkvar{
-        width:63%;
-        margin-top: -110px;
-    }
-
-    .hjallna{
-        width:65%;
-        margin-top: -200px;
-    }
-
-    .scourged {
-        margin-top: 100px;
-    }
-
-    .vid {
-        margin-top: 50px;
-    }
-    
-
-    .btn3{
-        width: 9%;
-        margin:2%; 
-    }
-    
+    .my-container-fluid{padding:0;overflow-x:hidden}h1{font-size:2.1rem}h2{font-size:1.2rem}.hero-header,.hero-header3{font-size:3rem}.hero-header2{font-size:1.8rem}.me{margin-top:-9px}.btn{width:20%}.btn2{width:45%}.navbar-brand,li,p{font-size:.9rem}.lokir{margin-top:-170px;width:55%}.halvar{margin-top:-40px;width:55%}.halvar-lotr{margin-top:-60px;width:55%}.ursa{margin-top:-100px;width:48%}.morkvar{width:63%;margin-top:-110px}.hjallna{width:65%;margin-top:-200px}.scourged{margin-top:100px}.vid{margin-top:50px}.btn3{width:9%;margin:2%}
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-
 @media (min-width: 1200px) {
-    .my-container-fluid {
-        padding: 0;
-        overflow-x: hidden;
-
-    }
-
-    h1 {
-        font-size: 2.2rem;
-        line-height: 1.2;
-    }
-
-    h2, h3, .design-questions {
-        font-size: 1.5rem;
-        line-height: 1.5;
-    }
-
-    p, li, .navbar-brand {
-        font-size: 1rem;
-    }
-
-    .row, h1, h2 {
-        padding-bottom: 15px;
-    }
-
-    .hero-header {
-        font-size: 4rem;
-        max-width: 22em;
-        line-height: 1.5;
-    }
-
-    .hero-header2 {
-        font-size: 2.5rem;
-    }
-
-    .hero-header3 {
-        font-size: 3.2rem;
-    }
-
-    .btn {
-        width: 15%;
-    }
-
-    .btn2 {
-        width: 20%;
-    }
-
-    .vid {
-        margin-top: 0;
-    }
-
-    .btn3{
-        width: 6.5%;
-        margin:1.2%; 
-    }
-
-    .lokir {
-        margin-top: -200px;
-        width:42%;
-    }
-
-    .halvar {
-        margin-top: -60px;
-        width:42%;
-    }
-
-    .halvar-lotr{
-        margin-top: -70px;
-        width:40%;
-    }
-
-    .ursa {
-        margin-top: -100px;
-        width: 34%;
-    }
-
-    .morkvar{
-        width:47%;
-        margin-top: -110px;
-    }
-
-    .hjallna{
-        width:47%;
-        margin-top: -210px;
-    }
-
-    .playtest-no{
-        font-size: 4rem;
-    }
-    
+    .my-container-fluid{padding:0;overflow-x:hidden}h1{font-size:2.2rem;line-height:1.2}.design-questions,h2,h3{font-size:1.5rem;line-height:1.5}.navbar-brand,li,p{font-size:1rem}.row,h1,h2{padding-bottom:15px}.hero-header{font-size:4rem;max-width:22em;line-height:1.5}.hero-header2{font-size:2.5rem}.hero-header3{font-size:3.2rem}.btn{width:15%}.btn2{width:20%}.vid{margin-top:0}.btn3{width:6.5%;margin:1.2%}.lokir{margin-top:-200px;width:42%}.halvar{margin-top:-60px;width:42%}.halvar-lotr{margin-top:-70px;width:40%}.ursa{margin-top:-100px;width:34%}.morkvar{width:47%;margin-top:-110px}.hjallna{width:47%;margin-top:-210px}.playtest-no{font-size:4rem}
 }
 
 /* Thicc devices (thicc desktops, 1440px and up) */
-
 @media (min-width: 1440px) {
-    .my-container-fluid {
-        padding: 0;
-        overflow-x: hidden;
-
-    }
-
-    .jumbotron {
-        height: 100%;
-    }
-
-    .btn {
-        width: 15%;
-        padding: 0;
-    }
-
-    .btn2 {
-        width: 20%;
-        padding: 20px;
-    }
-
-    .hjallna{
-        margin-top: -270px;
-    }
-    
-
-    .project-copy3 {
-        max-width: 32em;
-    }
+    .my-container-fluid{padding:0;overflow-x:hidden}.jumbotron{height:100%}.btn{width:15%;padding:0}.btn2{width:20%;padding:20px}.hjallna{margin-top:-270px}.project-copy3{max-width:32em}
 }
 
 /* Thiccc devices (thicc desktops, 1920px and up) */
-
 @media (min-width: 1920px) {
-    .my-container-fluid {
-        padding: 0;
-        overflow-x: hidden;
-
-    }
-
-    .jumbotron {
-        max-height: 100vh;
-        /* or height: 100& */
-    }
-
-    .btn {
-        width: 12%;
-        padding: 0;
-    }
-
-    .btn2 {
-        width: 20%;
-        padding: 20px;
-    }
-
-    .btn3{
-        width: 7%;
-        margin:1%; 
-    }
-
-    .hjallna{
-        margin-top: -210px;
-    }
-
-    .project-copy {
-        max-width: 40em;
-    }
-
-    .project-copy3 {
-        max-width: 40em;
-    }
-
-    .project-copy4 {
-        max-width: 60em;
-    }
+    .my-container-fluid{padding:0;overflow-x:hidden}.jumbotron{max-height:100vh}.btn{width:12%;padding:0}.btn2{width:20%;padding:20px}.btn3{width:7%;margin:1%}.hjallna{margin-top:-210px}.project-copy,.project-copy3{max-width:40em}.project-copy4{max-width:60em}
 }
 
 /* Portrait Mode Specific Styles (vertical screens) */
 @media (orientation: portrait) {
-    .jumbotron {
-        height: 100%;
-    }
+    .jumbotron{height:100%}
 }
 
 /* Adjust for Small Portrait Screens */
 @media (max-width: 767px) and (orientation: portrait) {
-    .jumbotron {
-        padding-top: 20vh;  /* More space for smaller vertical screens */
-        padding-bottom: 20vh;  /* More space for smaller vertical screens */
-    }
+    .jumbotron{padding-top:20vh;padding-bottom:20vh}
 }
 
 /* Adjust for Medium Portrait Screens */
 @media (max-width: 1024px) and (orientation: portrait) {
-    .jumbotron {
-        padding-top: 18vh;  /* 18% of the viewport height */
-        padding-bottom: 18vh;  /* 18% of the viewport height */
-    }
+    .jumbotron{padding-top:18vh;padding-bottom:18vh}
 }
