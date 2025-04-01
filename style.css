@@ -231,6 +231,7 @@ p, li, a {
 
 .playtest-no {
     color: #696969;
+    font-size: 2.8rem;
 }
 
 .btn-caption{
@@ -697,6 +698,10 @@ ul {
     .footer-content{
         font-size:1rem;
     }
+
+    .playtest-no{
+        font-size: 3.3rem;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -889,6 +894,12 @@ ul {
 /* Extra large devices (large desktops, 1200px and up) */
 
 @media (min-width: 1200px) {
+    .my-container-fluid {
+        padding: 0;
+        overflow-x: hidden;
+
+    }
+
     h1 {
         font-size: 2.2rem;
         line-height: 1.2;
@@ -919,15 +930,6 @@ ul {
 
     .hero-header3 {
         font-size: 3.2rem;
-    }
-
-
-
-
-    .my-container-fluid {
-        padding: 0;
-        overflow-x: hidden;
-
     }
 
     .btn {
@@ -975,6 +977,10 @@ ul {
     .hjallna{
         width:47%;
         margin-top: -210px;
+    }
+
+    .playtest-no{
+        font-size: 4rem;
     }
     
 }
