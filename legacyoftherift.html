@@ -42,7 +42,7 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="lotr-page">
 
     <!-- Container Fluid -->
     <div class="container-fluid my-container-fluid">
@@ -757,54 +757,7 @@
     </div>
 
     <!-- JQuery Script -->
-    <script>
-
-        // Button function to switch between ironhand ability sections
-        $(function () {
-            var buttons = [];
-            //Get all element buttons put them to array
-            $('.elementrow > .elementbtn').each(function () {
-                buttons.push($(this).attr('data-btn'));
-            });
-
-            //Index of currently displayed section
-            var currentSection = 0;
-            //Show the inital slide
-            $('.ironhand-section').hide();
-            $('#' + buttons[currentSection]).show();
-
-            //Click on buttons will show the specific section
-            $('.elementbtn').on('click', function () {
-                //Change active button onclick
-                $('.elementbtn').removeClass('active');
-                $(this).addClass('active');
-                //First we get the data-btn attribute
-                let btnId = $(this).attr('data-btn');
-                //Now we hide all content items shown
-                $('.ironhand-section').hide();
-                //And show the chosen one
-                $('#' + btnId).show();
-            });
-        })
-
-        // LOKIR 
-        var $textBox = $(".textBox"); $textBox.eq(0).fadeIn(), $("[data-showid]").on("click", function () { var t = $("#" + this.dataset.showid); $(this).parent().find($textBox).hide(), t.stop().fadeIn() }), jQuery(document).ready(function (t) { t(".1").on({ click: function () { t("#change-image").attr("src", "videos/lotr-vids/spectral-laceration.mp4") } }), t(".2").on({ click: function () { t("#change-image").attr("src", "videos/lotr-vids/spectral-warlock.mp4") } }) });
-
-        for (var btnContainer = document.getElementById("ability-row"), btns = btnContainer.getElementsByClassName("btn"), i = 0; i < btns.length; i++)btns[i].addEventListener("click", function () { var t = document.getElementsByClassName("bt1 active"); t[0].className = t[0].className.replace("active", ""), this.className += " active" });
-
-        // HALVAR
-        var $textBox2 = $(".textBox-2"); $textBox2.eq(0).fadeIn(), $("[data-showid]").on("click", function () { var t = $("#" + this.dataset.showid); $(this).parent().find($textBox2).hide(), t.stop().fadeIn() }), jQuery(document).ready(function (t) { t(".3").on({ click: function () { t("#change-image-2").attr("src", "videos/lotr-vids/hammer-time-yuh.mp4") } }), t(".4").on({ click: function () { t("#change-image-2").attr("src", "videos/lotr-vids/legendary-monolith.mp4") } }) });
-
-        for (var btnContainer = document.getElementById("ability-row-2"), btns = btnContainer.getElementsByClassName("bt2"), i = 0; i < btns.length; i++)btns[i].addEventListener("click", function () { var t = document.getElementsByClassName("bt2 active"); t[0].className = t[0].className.replace("active", ""), this.className += " active" });
-
-        // URSA
-        var $textBox3 = $(".textBox-3"); $textBox3.eq(0).fadeIn(), $("[data-showid]").on("click", function () { var t = $("#" + this.dataset.showid); $(this).parent().find($textBox3).hide(), t.stop().fadeIn() }), jQuery(document).ready(function (t) { t(".5").on({ click: function () { t("#change-image-3").attr("src", "videos/lotr-vids/munir-arrow.mp4") } }), t(".6").on({ click: function () { t("#change-image-3").attr("src", "videos/lotr-vids/harbinger-of-life.mp4") } }) });
-
-        for (var btnContainer = document.getElementById("ability-row-3"), btns = btnContainer.getElementsByClassName("bt3"), i = 0; i < btns.length; i++)btns[i].addEventListener("click", function () { var t = document.getElementsByClassName("bt3 active"); t[0].className = t[0].className.replace("active", ""), this.className += " active" });
-
-        AOS.init();
-    </script>
-
+    <script src="abilityscript.js"></script>
     <script src="lazyloading.js"></script>
 
 </body>
