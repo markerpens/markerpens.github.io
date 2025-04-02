@@ -330,7 +330,7 @@ ul {
 
 /* Thicc devices (thicc desktops, 1440px and up) */
 @media (min-width: 1440px) {
-    .my-container-fluid{padding:0;overflow-x:hidden}.jumbotron{height:100%}.btn{width:15%;padding:0}.btn2{width:20%;padding:20px}.hjallna{margin-top:-270px}.project-copy3{max-width:32em}.project-copy,.project-copy2{max-width:36em}
+    .my-container-fluid{padding:0;overflow-x:hidden}.jumbotron{height:100%}.btn{width:15%;padding:0}.btn2{width:20%;padding:20px}.hjallna{margin-top:-270px}.project-copy,.project-copy2,.project-copy3{max-width:42em}
 }
 
 /* Thiccc devices (thicc desktops, 1920px and up) */
@@ -338,10 +338,14 @@ ul {
     .my-container-fluid{padding:0;overflow-x:hidden}.jumbotron{max-height:100vh}.btn{width:12%;padding:0}.btn2{width:20%;padding:20px}.btn3{width:7%;margin:1%}.hjallna{margin-top:-210px}.project-copy,.project-copy2,.project-copy3{max-width:42em}
 }
 
-/* Thiccc devices (thicc desktops, 2560px and up) */
-@media (min-width: 2560px) {
-    .project-copy, .project-copy2, .project-copy3{max-width: 55em}
-    .project-copy4{max-width:100em}
+/* Thiccc devices (thicc desktops, 2200pz and up) */
+@media (min-width: 2200px) {
+    .project-copy, .project-copy2, .project-copy3{max-width: 50em}.project-copy4{max-width:100em}
+}
+
+/* Thiccc devices (thicc desktops, 2500px and up) */
+@media (min-width: 2500px) {
+    .project-copy, .project-copy2, .project-copy3{max-width: 55em}.project-copy4{max-width:100em}
 }
 
 /* Portrait Mode Specific Styles (vertical screens) */
