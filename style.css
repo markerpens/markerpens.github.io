@@ -165,7 +165,7 @@ h1, h2, h6, .hero-header, .hero-header2, .hero-header3 {
     color: #2db82d;
 }
 
-a:hover, a:focus, .game-links:hover, .game-links:focus, .sfu-link:hover, .sfu-link:focus, .figma-link:hover, .figma-link:focus {
+a:hover, .game-links:hover, .sfu-link:hover, .figma-link:hover {
     color: #196619;
     text-decoration: none;
 }
