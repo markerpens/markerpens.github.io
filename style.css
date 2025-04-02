@@ -78,7 +78,6 @@ html {
     visibility: visible;
     opacity: 1;
     filter: blur(0px) brightness(1);
-    box-shadow: 0px 0px 20px rgba(45, 184, 45, 0.7);
 }
 
 /* General Jumbotron Styles */
@@ -134,16 +133,12 @@ h2, h3, .design-questions, .hero-header2, .project-subtitle, .project-subtitle-l
     font-size: 1.2rem;
 }
 
-p, li, .desc, .game-links-subtitles, h6, .nav-link {
+p, li, .desc, .game-links-subtitles, h6, .nav-link, .footer-content, .next-project-footer, .nav-link {
     font-size: 0.9rem;
 }
 
 .playtest-no {
     font-size: 2.8rem;
-}
-
-.footer-content{
-    font-size:0.75rem;
 }
 
 .game-links-subtitles{
@@ -241,9 +236,17 @@ ul {
     max-width: 50em;
 }
 
-/** Footer BG color **/
+/** Footer crap **/
 .footer {
     background-color: #111111;
+    text-align: left;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns text to the left */
+    gap: 5px;
 }
 
 /** Buttons **/
@@ -310,17 +313,19 @@ ul {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-    .jumbotron{height:50vh}.btn{width:10%}.btn2{width:45%}.lokir{margin-top:-120px}.morkvar,.ursa{margin-top:-50px}.ursa{width:35%}.hjallna{margin-top:-160px}.footer-content{font-size:1rem}.playtest-no{font-size:3.3rem}
+    .jumbotron{height:50vh}.btn{width:10%}.btn2{width:45%}.lokir{margin-top:-120px}.morkvar,.ursa{margin-top:-50px}.ursa{width:35%}.hjallna{margin-top:-160px}.footer-content{font-size:1rem}.playtest-no{font-size:3.3rem}.footer-container{flex-direction:row;justify-content:space-between}
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    h1{font-size:2.1rem;line-height:1.2}.design-questions,h2,h3{font-size:1.7rem;line-height:1.2}.next-project-footer,a,li,p{font-size:1rem}.row,h1,h2{padding-bottom:15px}.hero-header,.hero-header3{font-size:2.7rem;max-width:22em;line-height:1.5}.hero-header2{font-size:1.8rem}.reflection-header{font-size:2.5rem}.jumbotron{height:100vh;padding-top:225px;padding-bottom:290px;margin:0}.my-container-fluid{padding:0;overflow-x:hidden}.btn2{width:20%;padding:20px}.ca3-scroll-down-link{height:200px;width:30px;font-size:30px}.game-links,.game-links-subtitles{font-size:1.5rem}.btn3{width:12%;margin:2%}.lokir{margin-top:-120px}.morkvar,.ursa{margin-top:-50px}.ursa{width:35%}.hjallna{margin-top:-160px}.nav-link{font-size:1rem}
+    h1{font-size:2.1rem;line-height:1.2}.design-questions,h2,h3{font-size:1.7rem;line-height:1.2}.next-project-footer,.footer-content,li,p{font-size:1rem}.row,h1,h2{padding-bottom:15px}.hero-header,.hero-header3{font-size:2.7rem;max-width:22em;line-height:1.5}.hero-header2{font-size:1.8rem}.reflection-header{font-size:2.5rem}.jumbotron{height:100vh;padding-top:225px;padding-bottom:290px;margin:0}.my-container-fluid{padding:0;overflow-x:hidden}.btn2{width:20%;padding:20px}.ca3-scroll-down-link{height:200px;width:30px;font-size:30px}.game-links,.game-links-subtitles{font-size:1.5rem}.btn3{width:12%;margin:2%}.lokir{margin-top:-120px}.morkvar,.ursa{margin-top:-50px}.ursa{width:35%}.hjallna{margin-top:-160px}.nav-link{font-size:1rem}
+
+
 }
 
 /* Large devices (desktops, laptops 992px and up) */
 @media (min-width: 992px) {
-    .my-container-fluid{padding:0;overflow-x:hidden}h1{font-size:2.1rem}h2{font-size:1.4rem}.hero-header,.hero-header3{font-size:3rem}.hero-header2{font-size:1.8rem}.me{margin-top:-9px}.btn2{width:45%}.lokir{margin-top:-170px;width:55%}.halvar{margin-top:-40px;width:55%}.halvar-lotr{margin-top:-60px;width:55%}.ursa{margin-top:-100px;width:48%}.morkvar{width:63%;margin-top:-110px}.hjallna{width:65%;margin-top:-200px}.scourged{margin-top:100px}.vid{margin-top:50px}.btn3{width:9%;margin:2%}.project-copy2{max-width:55em}.nav-link{font-size:1.2rem}
+    .my-container-fluid{padding:0;overflow-x:hidden}h1{font-size:2.1rem}h2{font-size:1.4rem}.hero-header,.hero-header3{font-size:3rem}.hero-header2{font-size:1.8rem}.me{margin-top:-9px}.btn2{width:45%}.lokir{margin-top:-170px;width:55%}.halvar{margin-top:-40px;width:55%}.halvar-lotr{margin-top:-60px;width:55%}.ursa{margin-top:-100px;width:48%}.morkvar{width:63%;margin-top:-110px}.hjallna{width:65%;margin-top:-200px}.scourged{margin-top:100px}.vid{margin-top:50px}.btn3{width:9%;margin:2%}.project-copy2{max-width:55em}
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
