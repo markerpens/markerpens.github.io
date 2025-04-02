@@ -1,8 +1,26 @@
+/** Font Utils **/
+@font-face {
+    font-family: "Inter Regular";
+    src: url("fonts/Inter_18pt-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Inconsolata Bold";
+    src: url("fonts/Inconsolata-Bold.ttf") format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Inter Semi Bold";
+    src: url("fonts/Inter_18pt-SemiBold.ttf") format("truetype");
+    font-weight: bold;
+}
+
 /** Body **/
 body {
     color: #2db82d;
     /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;*/
-    font-family: 'Fira Sans Regular', sans-serif;
+    font-family: 'Inter Regular', sans-serif;
     line-height: 2;
     margin: 0;
     background-color: #111111;
@@ -63,15 +81,6 @@ html {
     box-shadow: 0px 0px 20px rgba(45, 184, 45, 0.7);
 }
 
-/** Font Utils **/
-@font-face {
-    font-family: "Fira Sans Regular";
-    src: url("fonts/FiraSans-Regular.ttf");
-    font-family: "Inconsolata Bold";
-    src: url("fonts/Inconsolata-Bold.ttf");
-    -webkit-text-stroke: 3px black;
-}
-
 /* General Jumbotron Styles */
 .jumbotron{
     position:relative;max-height:100%;padding-top:10vh;padding-bottom:10vh;margin-bottom:0;background-size:cover;background-position:center;border-bottom:1px solid #929292;background-attachment:scroll;
@@ -107,9 +116,13 @@ html {
 
 /* Mobile First!!! */
 
-/* Font Utils */
-h1, h2, h3, .design-questions, .btn-caption, nav a, .navbar-brand, .next-project-footer, .footer-content, .progress-text, h6{
+/* Font Defs */
+h1, h2, h3, .design-questions, .btn-caption, nav a, .navbar-brand, .next-project-footer, .footer-content{
     font-family: 'Inconsolata Bold', sans-serif;
+}
+
+h6{
+    font-family: 'Inter Semi Bold', sans-serif;
 }
 
 /* Font Sizes */
@@ -327,6 +340,7 @@ ul {
 
 /* Thiccc devices (thicc desktops, 2560px and up) */
 @media (min-width: 2560px) {
+    .project-copy, .project-copy2, .project-copy3{max-width: 55em}
     .project-copy4{max-width:100em}
 }
 
