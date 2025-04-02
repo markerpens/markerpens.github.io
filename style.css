@@ -325,7 +325,7 @@ ul {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    .my-container-fluid{padding:0;overflow-x:hidden}h1{font-size:2.2rem;line-height:1.2}.design-questions,h2,h3{font-size:1.5rem;line-height:1.5}.navbar-brand,li,p{font-size:1rem}.row,h1,h2{padding-bottom:15px}.hero-header{font-size:4rem;max-width:22em;line-height:1.5}.hero-header2{font-size:2.5rem}.hero-header3{font-size:3.2rem}.btn{width:15%}.btn2{width:20%}.vid{margin-top:0}.btn3{width:6.5%;margin:1.2%}.lokir{margin-top:-200px;width:42%}.halvar{margin-top:-60px;width:42%}.halvar-lotr{margin-top:-70px;width:40%}.ursa{margin-top:-100px;width:34%}.morkvar{width:47%;margin-top:-110px}.hjallna{width:47%;margin-top:-210px}.playtest-no{font-size:4rem}h6{font-size:1rem;}.project-copy2{max-width:42em}
+    .my-container-fluid{padding:0;overflow-x:hidden}h1{font-size:2.2rem;line-height:1.2}.design-questions,h2,h3{font-size:1.5rem;line-height:1.5}.navbar-brand,li,p{font-size:1rem}.row,h1,h2{padding-bottom:15px}.hero-header{font-size:4rem;max-width:22em;line-height:1.5}.hero-header2{font-size:2.5rem}.hero-header3{font-size:3.2rem}.btn{width:15%}.btn2{width:20%}.vid{margin-top:0}.btn3{width:6.5%;margin:1.2%}.lokir{margin-top:-200px;width:42%}.halvar{margin-top:-60px;width:42%}.halvar-lotr{margin-top:-70px;width:40%}.ursa{margin-top:-100px;width:34%}.morkvar{width:47%;margin-top:-110px}.hjallna{width:47%;margin-top:-210px}.playtest-no{font-size:4rem}h6{font-size:1rem;}.project-copy2{max-width:42em}.ability-copy{max-width: 40em}
 }
 
 /* Thicc devices (thicc desktops, 1440px and up) */
