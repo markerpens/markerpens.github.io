@@ -7,19 +7,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- <meta property="og:title" content="Mark Robles" />
-    <meta property="og:description" content="Game Designer." />
-    <meta property="og:image" content="images/og-image.png" />
-    <meta property="og:url" content="https://markerpens.github.io/" /> -->
-
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://markerpens.github.io/mw5mercs.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="MechWarrior 5: Mercenaries Process - Mark Robles">
     <meta property="og:description" content="MechWarrior 5: Mercenaries.">
-    <!-- <meta property="og:image"
-        content="https://opengraph.b-cdn.net/production/images/962f55ff-d6a9-4a36-9924-e41ea0e0b664.png?token=2myNThUlwA2lES3xtUxSu197ab4gGKeYe5mth_DBUao&height=628&width=1200&expires=33273624496"> -->
-
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
@@ -27,9 +19,6 @@
     <meta property="twitter:url" content="https://markerpens.github.io/mw5mercs.html">
     <meta name="twitter:title" content="MechWarrior 5: Mercenaries Process - Mark Robles">
     <meta name="twitter:description" content="MechWarrior 5: Mercenaries.">
-    <!-- <meta name="twitter:image"
-        content="https://opengraph.b-cdn.net/production/images/962f55ff-d6a9-4a36-9924-e41ea0e0b664.png?token=2myNThUlwA2lES3xtUxSu197ab4gGKeYe5mth_DBUao&height=628&width=1200&expires=33273624496"> -->
-
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -45,6 +34,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <!-- Fancybox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 </head>
 
 <body>
@@ -184,28 +177,42 @@
                     — with the guidance of lead designers to faciliate rewarding combat.
                 </p>
             </div>
+        </div>
 
-            <h1 class="hero-header3 py-5">DLC Loadout Examples:</h1>
-            <div class="col-lg-12 col-xl-12 my-project-content pb-5">
-                <img src="images/mw5mercs-assets/cplt.png" class="img-fluid float-center emb"></a>
-                <h6 class="pt-3">The CPLT-K2-S. Kitted with lasers and ballistic weaponry to facilitate sustained
-                    long-ranged
-                    combat. Screenshot from FGustoh.</h6>
+        <!-- DLC loadout examples -->
+        <div class="row my-row">
+            <h1 class="hero-header3 py-5 col-lg-12">DLC Loadout Examples:</h1>
+            <div class="col-lg-6 col-md-12 col-sm-12 my-project-content pb-5">
+                <a href="images/mw5mercs-assets/cplt.png" data-fancybox="loadout-gallery" class="fancybox-hover">
+                    <img src="images/mw5mercs-assets/cplt.png" class="img-fluid float-center emb">
+                </a>
+                <h6 class="pt-3">CPLT-K2-S: Kitted with hard-hitting PPC lasers and ballistic weaponry to facilitate
+                    sustained,
+                    long-ranged combat.</h6>
             </div>
-            <div class="col-lg-12 col-xl-12 my-project-content pb-5">
-                <img src="images/mw5mercs-assets/blr.png" class="img-fluid float-center emb"></a>
-                <h6 class="pt-3">The BLR-1G-S. Kitted with weapons that perform well in all ranges with a minimum
-                    reliance on ammo for a versatile stock build. Screenshot from FGustoh.</h6>
+
+            <div class="col-lg-6 col-md-12 col-sm-12 my-project-content pb-5">
+                <a href="images/mw5mercs-assets/blr.png" data-fancybox="loadout-gallery" class="fancybox-hover">
+                    <img src="images/mw5mercs-assets/blr.png" class="img-fluid float-center emb">
+                </a>
+                <h6 class="pt-3">BLR-1G-S: Kitted with weapons that excel in all ranges with a minimum
+                    reliance on ammo for a versatile stock build.</h6>
             </div>
-            <div class="col-lg-12 col-xl-12 my-project-content pb-5">
-                <img src="images/mw5mercs-assets/hgn.png" class="img-fluid float-center emb"></a>
-                <h6 class="pt-3">The HGN-VEST. Kitted with Rapid-Fire ballistics, close-range missiles, and a
-                    melee greatsword to excel in burst damage/close combat. Screenshot from FGustoh.</h6>
+
+            <div class="col-lg-6 col-md-12 col-sm-12 my-project-content pb-5">
+                <a href="images/mw5mercs-assets/hgn.png" data-fancybox="loadout-gallery" class="fancybox-hover">
+                    <img src="images/mw5mercs-assets/hgn.png" class="img-fluid float-center emb">
+                </a>
+                <h6 class="pt-3">HGN-VEST: Kitted with rapid-fire ballistics, close-range missiles, and a melee
+                    greatsword to excel in close quarters burst damage.</h6>
             </div>
-            <div class="col-lg-12 col-xl-12 my-project-content pb-5">
-                <img src="images/mw5mercs-assets/ldk.png" class="img-fluid float-center emb"></a>
-                <h6 class="pt-3">The LDK-X2A. Kitted with predominantly Burst-Fire ballistics with high armor to
-                    excel in medium-ranged guerilla combat. Screenshot from FGustoh.</h6>
+
+            <div class="col-lg-6 col-md-12 col-sm-12 my-project-content pb-5">
+                <a href="images/mw5mercs-assets/ldk.png" data-fancybox="loadout-gallery" class="fancybox-hover">
+                    <img src="images/mw5mercs-assets/ldk.png" class="img-fluid float-center emb">
+                </a>
+                <h6 class="pt-3">LDK-X2A: Kitted with mainly burst-fire ballistics with high armor to excel
+                    in medium-ranged guerilla combat.</h6>
             </div>
         </div>
 
@@ -214,12 +221,11 @@
         <div class="row my-row">
             <div class="col-lg-12 col-xl-6 my-project-content pb-5">
                 <h2>Problem</h2>
-                <p class="project-copy">The main issue I encountered was prototyping designs and building loadouts to
-                    cater to the needs of the DLC's narrative and campaign. While Dragon's Gambit encouraged a multitude
-                    of playstyles across missions from diverse enemy encounters, Solaris Showdown had a focus on "Arena
-                    Combat", which was a close-range, brawler-esque, gladiatorial style of fighting. This enticed me to
-                    redesign many of the DLC 6 'Mechs and ensure that they had some sort of utility to excel in close
-                    range encounters.
+                <p class="project-copy">The main challenge was designing loadouts that fit the narrative and
+                    campaign for the DLCs. While Dragon’s Gambit encouraged varied playstyles, Solaris Showdown focused
+                    on
+                    close-range, arena-style combat. This pushed me to redesign many DLC 6 'Mechs, ensuring they had the
+                    tools to excel in brawler-style encounters.
                 </p>
             </div>
 
@@ -227,16 +233,11 @@
             <div class="col-lg-12 col-xl-6 my-project-content pb-5">
                 <h2>Solution</h2>
                 <p class="project-copy">
-                    The solution for DLC 6 was to approach the 'Mech designs from a "close-combat first" approach. To
-                    excel in close-range, I stripped down ammo capacities for 'Mechs that had such needs,
-                    and kitted them with increased armor and mobility through equipment such as Jump Jets (flight for a
-                    short duration) and
-                    Superchargers (increasing speed for a short duration) to meet their tonnage requirements. This was
-                    due to the fact that battles typically did not last long, and the extra ammo weight would be better
-                    allocated to increased survivability or offensive prowess. I
-                    prioritized weapons that excelled in
-                    close to medium range, while giving 'Mechs that didn't excel in a brawling environment some utility
-                    in close range, such as small lasers or melee weapons.
+                    The solution for DLC 6 was a “close-combat first” approach. I reduced ammo capacities where needed
+                    and prioritized armor, mobility, and utility. Jump Jets and Superchargers improved speed and
+                    agility, while weapon choices favored close-to-medium range combat. For 'Mechs less suited to
+                    brawling, I
+                    added small lasers or melee weapons for better close-range viability.
                 </p>
             </div>
         </div>
@@ -330,6 +331,7 @@
 
     <script src="transition.js"></script>
     <script src="lazyloading.js"></script>
+    <script src="fancybox.js"></script>
 
 </body>
 

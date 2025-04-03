@@ -190,8 +190,8 @@ h6, .h2-hero-caption, .playtest-no {
 
 /* Paddings, margins, etc */
 .row, .hero-header2, .navbar-brand, .navbar-nav, .footer{
-    padding-left:10%;
-    padding-right:10%;
+    padding-left:12%;
+    padding-right:12%;
 }
 
 .nav-item, ul {
@@ -291,6 +291,20 @@ ul {
 /** Videos **/
 .vid {
     margin-top: -50px;
+}
+
+/* Fancybox */
+.fancybox-hover {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.fancybox-hover img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.fancybox-hover:hover img {
+    transform: scale(1.05);
 }
 
 /** Hover Effect Index Html **/

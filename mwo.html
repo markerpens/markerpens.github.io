@@ -7,19 +7,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- <meta property="og:title" content="Mark Robles" />
-    <meta property="og:description" content="Game Designer." />
-    <meta property="og:image" content="images/og-image.png" />
-    <meta property="og:url" content="https://markerpens.github.io/" /> -->
-
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://markerpens.github.io/mwo.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="MechWarrior Online - Mark Robles">
     <meta property="og:description" content="MechWarrior Online.">
-    <!-- <meta property="og:image"
-        content="https://opengraph.b-cdn.net/production/images/962f55ff-d6a9-4a36-9924-e41ea0e0b664.png?token=2myNThUlwA2lES3xtUxSu197ab4gGKeYe5mth_DBUao&height=628&width=1200&expires=33273624496"> -->
-
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
@@ -27,9 +19,6 @@
     <meta property="twitter:url" content="https://markerpens.github.io/mwo.html">
     <meta name="twitter:title" content="MechWarrior Online - Mark Robles">
     <meta name="twitter:description" content="MechWarrior Online.">
-    <!-- <meta name="twitter:image"
-        content="https://opengraph.b-cdn.net/production/images/962f55ff-d6a9-4a36-9924-e41ea0e0b664.png?token=2myNThUlwA2lES3xtUxSu197ab4gGKeYe5mth_DBUao&height=628&width=1200&expires=33273624496"> -->
-
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -45,6 +34,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <!-- Fancybox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 </head>
 
 <body>
@@ -186,7 +179,7 @@
             </div>
 
             <div class="col-lg-12 col-xl-6  my-project-content pb-5 pt-0">
-                <h2>QA Collaboration / Design Documentation</h2>
+                <h2>Design Documentation / QA Collaboration</h2>
                 <p class="project-copy2">
                     Collaborated with the QA team and lead to ensure the veracity of the loadouts, mobility stats, and
                     quirks for Legendary 'Mechs and Special Variants through writing comprehensive documentation.
@@ -205,32 +198,34 @@
                     personal favourite, an anime-themed 'Mech!).
                 </p>
             </div>
+        </div>
 
-            <h1 class="hero-header3 py-5">Legendary 'Mech Examples:</h1>
-            <div class="col-lg-12 col-xl-12 my-project-content pb-5">
-                <img src="images/mwo-assets/qkd-d.png" class="img-fluid float-center emb"></a>
+        <!-- Legendary 'Mech Examples -->
+        <div class="row my-row">
+            <h1 class="hero-header3 py-5 text-center col-lg-12">Legendary 'Mech Examples:</h1>
+            <div class="col-lg-6 col-md-12 col-sm-12 my-project-content pb-5">
+                <a href="images/mwo-assets/qkd-d.png" data-fancybox="mech-gallery" class="fancybox-hover">
+                    <img src="images/mwo-assets/qkd-d.png" class="img-fluid emb">
+                </a>
                 <h6 class="pt-3">In-game screenshot of the Desperada. By the power of anime!</h6>
             </div>
-            <div class="col-lg-12 col-xl-12 my-project-content pb-5">
-                <img src="images/mwo-assets/as7-w.png" class="img-fluid float-center emb"></a>
+            <div class="col-lg-6 col-md-12 col-sm-12 my-project-content pb-5">
+                <a href="images/mwo-assets/as7-w.png" data-fancybox="mech-gallery" class="fancybox-hover">
+                    <img src="images/mwo-assets/as7-w.png" class="img-fluid emb">
+                </a>
                 <h6 class="pt-3">In-game screenshot of the Warlord. Fatality.</h6>
             </div>
-            <div class="col-lg-12 col-xl-12 my-project-content pb-5">
-                <img src="images/mwo-assets/mcii-mwk.png" class="img-fluid float-center emb"></a>
+            <div class="col-lg-6 col-md-12 col-sm-12 my-project-content pb-5">
+                <a href="images/mwo-assets/mcii-mwk.png" data-fancybox="mech-gallery" class="fancybox-hover">
+                    <img src="images/mwo-assets/mcii-mwk.png" class="img-fluid emb">
+                </a>
                 <h6 class="pt-3">In-game screenshot of the Moonwalker, one of the first Legends I implemented.</h6>
             </div>
-            <div class="col-lg-12 col-xl-12 my-project-content pb-5">
-                <img src="images/mwo-assets/vgl-gw-custom.png" class="img-fluid float-center emb"></a>
+            <div class="col-lg-6 col-md-12 col-sm-12 my-project-content pb-5">
+                <a href="images/mwo-assets/vgl-gw-custom.png" data-fancybox="mech-gallery" class="fancybox-hover">
+                    <img src="images/mwo-assets/vgl-gw-custom.png" class="img-fluid emb">
+                </a>
                 <h6 class="pt-3">In-game screenshot of the Gorewing. Custom painted my personal one with green!</h6>
-            </div>
-
-            <div class="col-lg-12 col-xl-12 my-project-content pb-5">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/lO5poqOMQSU"
-                        allowfullscreen></iframe>
-                </div>
-                <h6 class="pt-3">And...the infamous UwU voiceline for the Desperada. Still don't know how I did that...
-                </h6>
             </div>
         </div>
 
@@ -278,9 +273,9 @@
         <!-- Results -->
         <h1 class="hero-header3 py-5">Results.</h1>
         <div class="row my-row">
-            <div class="col-lg-12 col-xl-6 my-project-content">
+            <div class="col-lg-12 col-xl-12 my-project-content pb-5">
                 <h2>A Fresh and Exciting Metagame</h2>
-                <p class="project-copy3">Players reported renewed excitement with the new Legends rebranding, monthly
+                <p class="project-copy4">Players reported renewed excitement with the new Legends rebranding, monthly
                     'Mech
                     content, and metagame shake-ups —
                     yielding increased sales, engagement, and very positive reviews on
@@ -291,7 +286,16 @@
                 </p>
             </div>
 
-            <div class="col-lg-12 col-xl-6 my-project-content pb-5">
+            <div class="col-lg-6 col-xl-6 my-project-content pb-5">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/lO5poqOMQSU"
+                        allowfullscreen></iframe>
+                </div>
+                <h6 class="pt-3">Here's the infamous UwU voiceline for the Desperada. Still don't know how I did that...
+                </h6>
+            </div>
+
+            <div class="col-lg-6 col-xl-6 my-project-content pb-5">
                 <div class="embed-responsive embed-responsive-16by9">
                     <iframe class="embed-responsive-item"
                         src="https://www.youtube.com/embed/h3Qcv58PsIM?si=-YAO_Ny2SgslVxjH" allowfullscreen></iframe>
@@ -345,6 +349,7 @@
 
     <script src="transition.js"></script>
     <script src="lazyloading.js"></script>
+    <script src="fancybox.js"></script>
 
 </body>
 
