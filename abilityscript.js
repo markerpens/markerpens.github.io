@@ -1,3 +1,4 @@
+//If the page's body tag contains this, run desired functions
 document.addEventListener("DOMContentLoaded", () => {
     if (document.body.classList.contains("rotr-page")) {
         initreckoningoftherift();
@@ -5,6 +6,9 @@ document.addEventListener("DOMContentLoaded", () => {
         initlegacyoftherift();
     } else if (document.body.classList.contains("bh-page")) {
         initbeyondhope();
+    }
+    else if (document.body.classList.contains("hb-page")) {
+        inithexball();
     }
 });
 
@@ -117,6 +121,13 @@ function initlegacyoftherift() {
     AOS.init();
 }
 
+//Run button functions on beyond hope page
 function initbeyondhope() {
     var $textBox = $(".textBox"); $textBox.eq(0).fadeIn(), $("[data-showid]").on("click", function () { var t = $("#" + this.dataset.showid); $textBox.not(t).hide(), t.stop().fadeIn() }), jQuery(document).ready(function (t) { t(".1").on({ click: function () { t("#change-image").attr("src", "videos/bh-vids/Passive2.mp4") } }), t(".2").on({ click: function () { t("#change-image").attr("src", "videos/bh-vids/Left-Click.mp4") } }), t(".3").on({ click: function () { t("#change-image").attr("src", "videos/bh-vids/Left-Shift2.mp4") } }), t(".4").on({ click: function () { t("#change-image").attr("src", "videos/bh-vids/Q.mp4") } }), t(".5").on({ click: function () { t("#change-image").attr("src", "videos/bh-vids/E.mp4") } }), t(".6").on({ click: function () { t("#change-image").attr("src", "videos/bh-vids/Salvation2.mp4") } }) }), AOS.init(); for (var btnContainer = document.getElementById("ability-row"), btns = btnContainer.getElementsByClassName("btn"), i = 0; i < btns.length; i++)btns[i].addEventListener("click", function () { var t = document.getElementsByClassName("active"); t[0].className = t[0].className.replace(" active", ""), this.className += " active" });
+}
+
+//Run button functions on hexball page
+function inithexball() {
+    var $textBoxHex = $(".textBox"); $textBoxHex.eq(0).fadeIn(), $("[data-showid]").on("click", function () { var t = $("#" + this.dataset.showid); $textBoxHex.not(t).hide(), t.stop().fadeIn() }), jQuery(document).ready(function (t) { t(".1").on({ click: function () { t("#change-image").attr("src", "videos/hb-vids/hexball-shoot.mp4") } }); t(".2").on({ click: function () { t("#change-image").attr("src", "videos/hb-vids/hexball-jump.mp4") } }) }); AOS.init(); for (var btnContainer = document.getElementById("ability-row"), btns = btnContainer.getElementsByClassName("btn"), i = 0; i < btns.length; i++)
+        btns[i].addEventListener("click", function () { var t = document.getElementsByClassName("active"); (t[0].className = t[0].className.replace(" active", "")), (this.className += " active") });
 }

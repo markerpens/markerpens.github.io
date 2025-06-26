@@ -98,6 +98,7 @@ html {
 .rotr-jb {background-image: url('images/rotr-assets/rotr-jumbotron.png');}
 .lotr-jb {background-image: url('images/lotr-assets/lotr-jumbotron.png');}
 .bh-jb {background-image: url('images/bh-assets/bh-jumbotron-3.png');}
+.hb-jb {background-image: url('images/index-assets/hexball-index.png');}
 
 /* Text Container Styles */
 .text-container {
@@ -250,7 +251,7 @@ ul {
 }
 
 /** Buttons **/
-.btn, .btn2, .btn3{
+.btn, .btn2, .btn3, .hex-btn{
     width: 20%;
     padding: 0;
     opacity: 0.5;
