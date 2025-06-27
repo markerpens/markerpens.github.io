@@ -251,7 +251,7 @@ ul {
 }
 
 /** Buttons **/
-.btn, .btn2, .btn3, .hex-btn{
+.btn, .btn2, .btn3{
     width: 20%;
     padding: 0;
     opacity: 0.5;
